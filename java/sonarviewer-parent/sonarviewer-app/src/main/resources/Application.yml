@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: dev
+---
+
+spring:
+  profiles: dev
+
+
+sonar:
+  server:
+    url: https://nemo.sonarqube.org
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE

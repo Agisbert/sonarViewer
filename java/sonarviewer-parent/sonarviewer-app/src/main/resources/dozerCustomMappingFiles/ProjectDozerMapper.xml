@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+	<mapping>
+		<class-a>org.w00tdevs.project.sonarviewer.business.external.sonarqube.domain.SonarQubeProject
+		</class-a>
+		<class-b>org.w00tdevs.project.sonarviewer.business.database.entity.Project
+		</class-b>
+		<field>
+			<a>id</a>
+			<b>projectId</b>
+		</field>
+		<field>
+			<a>k</a>
+			<b>key</b>
+		</field>
+		<field>
+			<a>nm</a>
+			<b>name</b>
+		</field>
+	</mapping>
+
+</mappings> 
