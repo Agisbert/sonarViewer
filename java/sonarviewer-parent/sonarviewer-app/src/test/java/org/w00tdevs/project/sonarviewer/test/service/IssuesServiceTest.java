@@ -14,9 +14,9 @@ package org.w00tdevs.project.sonarviewer.test.service;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.w00tdevs.project.sonarviewer.business.service.IssueService;
-import org.w00tdevs.project.sonarviewer.business.service.ProjectService;
-import org.w00tdevs.project.sonarviewer.business.service.RuleService;
+import org.w00tdevs.project.sonarviewer.service.IssueService;
+import org.w00tdevs.project.sonarviewer.service.ProjectService;
+import org.w00tdevs.project.sonarviewer.service.RuleService;
 import org.w00tdevs.project.sonarviewer.test.generic.IntegrationTest;
 
 public class IssuesServiceTest extends IntegrationTest {

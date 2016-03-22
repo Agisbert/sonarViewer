@@ -17,10 +17,10 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.w00tdevs.project.sonarviewer.business.database.entity.Profile;
-import org.w00tdevs.project.sonarviewer.business.database.entity.Project;
-import org.w00tdevs.project.sonarviewer.business.service.ProfileService;
-import org.w00tdevs.project.sonarviewer.business.service.ProjectService;
+import org.w00tdevs.project.sonarviewer.database.entity.Profile;
+import org.w00tdevs.project.sonarviewer.database.entity.Project;
+import org.w00tdevs.project.sonarviewer.service.ProfileService;
+import org.w00tdevs.project.sonarviewer.service.ProjectService;
 import org.w00tdevs.project.sonarviewer.test.generic.IntegrationTest;
 
 /**
