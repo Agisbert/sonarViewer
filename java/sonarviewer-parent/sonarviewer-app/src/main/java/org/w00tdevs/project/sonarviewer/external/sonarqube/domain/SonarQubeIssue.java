@@ -1,15 +1,14 @@
 /*
-*	     ___    wWw ()_()(o)__(o)  .-.         _      wWw  wWw    wWw oo_    
-*	    (___)__ (O)_(O o)(__  __)c(O_O)c      /||_    (O)_ (O)    (O)/  _)-< 
-*	    (O)(O)  / __)|^_\  (  ) ,'.---.`,      /o_)   / __)( \    / )\__ `.  
-*	    /  _\  / (   |(_))  )( / /|_|_|\ \    / |(\  / (    \ \  / /    `. | 
-*	    | |_))(  _)  |  /  (  )| \_____/ |    | | ))(  _)   /  \/  \    _| | 
-*	    | |_)) \ \_  )|\\   )/ '. `---' .`    | |//  \ \_   \ `--' / ,-'   | 
-*	    (.'-'   \__)(/  \) (     `-...-'      \__/    \__)   `-..-' (_..--'  
-*
-*		sonarviewer-app - org.alberto.project.sonarviewer.sonarqube.domain - Issue.java
-* 		09-mar-2016 - Alberto
-*/
+ *	    _  _                
+ *	   / \/ \_|_ _| _     _ 
+ *	\^/\_/\_/ |_(_|(/_\_/_> 
+ *
+ *	Project: sonarviewer-app
+ *	Package: org.w00tdevs.project.sonarviewer.external.sonarqube.domain
+ *	Class: SonarQubeIssue.java
+ *	Author: Alberto
+ *	Last update: 23-mar-2016
+ */
 
 package org.w00tdevs.project.sonarviewer.external.sonarqube.domain;
 
@@ -31,10 +30,14 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 /**
  * The Class Issue.
  */
+/**
+ * @author Alberto
+ *
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Generated("org.jsonschema2pojo")
-@JsonPropertyOrder({ "key", "rule", "severity", "component", "componentId", "project", "line", "textRange", "flows",
-		"status", "message", "debt", "author", "tags", "creationDate", "updateDate" })
+@JsonPropertyOrder({ "key", "rule", "severity", "component", "componentId", "line", "textRange", "flows", "status",
+		"message", "debt", "author", "tags", "creationDate", "updateDate" })
 public class SonarQubeIssue {
 
 	/** The key. */
@@ -56,10 +59,6 @@ public class SonarQubeIssue {
 	/** The component id. */
 	@JsonProperty("componentId")
 	private Integer componentId;
-
-	/** The project. */
-	@JsonProperty("project")
-	private String project;
 
 	/** The line. */
 	@JsonProperty("line")
@@ -110,7 +109,8 @@ public class SonarQubeIssue {
 	/**
 	 * Sets the key.
 	 *
-	 * @param key the new key
+	 * @param key
+	 *            the new key
 	 */
 	@JsonProperty("key")
 	public void setKey(String key) {
@@ -130,7 +130,8 @@ public class SonarQubeIssue {
 	/**
 	 * Sets the rule.
 	 *
-	 * @param rule the new rule
+	 * @param rule
+	 *            the new rule
 	 */
 	@JsonProperty("rule")
 	public void setRule(String rule) {
@@ -150,7 +151,8 @@ public class SonarQubeIssue {
 	/**
 	 * Sets the severity.
 	 *
-	 * @param severity the new severity
+	 * @param severity
+	 *            the new severity
 	 */
 	@JsonProperty("severity")
 	public void setSeverity(String severity) {
@@ -170,7 +172,8 @@ public class SonarQubeIssue {
 	/**
 	 * Sets the component.
 	 *
-	 * @param component the new component
+	 * @param component
+	 *            the new component
 	 */
 	@JsonProperty("component")
 	public void setComponent(String component) {
@@ -190,31 +193,12 @@ public class SonarQubeIssue {
 	/**
 	 * Sets the component id.
 	 *
-	 * @param componentId the new component id
+	 * @param componentId
+	 *            the new component id
 	 */
 	@JsonProperty("componentId")
 	public void setComponentId(Integer componentId) {
 		this.componentId = componentId;
-	}
-
-	/**
-	 * Gets the project.
-	 *
-	 * @return the project
-	 */
-	@JsonProperty("project")
-	public String getProject() {
-		return project;
-	}
-
-	/**
-	 * Sets the project.
-	 *
-	 * @param project the new project
-	 */
-	@JsonProperty("project")
-	public void setProject(String project) {
-		this.project = project;
 	}
 
 	/**
@@ -230,7 +214,8 @@ public class SonarQubeIssue {
 	/**
 	 * Sets the line.
 	 *
-	 * @param line the new line
+	 * @param line
+	 *            the new line
 	 */
 	@JsonProperty("line")
 	public void setLine(Integer line) {
@@ -250,7 +235,8 @@ public class SonarQubeIssue {
 	/**
 	 * Sets the status.
 	 *
-	 * @param status the new status
+	 * @param status
+	 *            the new status
 	 */
 	@JsonProperty("status")
 	public void setStatus(String status) {
@@ -270,7 +256,8 @@ public class SonarQubeIssue {
 	/**
 	 * Sets the message.
 	 *
-	 * @param message the new message
+	 * @param message
+	 *            the new message
 	 */
 	@JsonProperty("message")
 	public void setMessage(String message) {
@@ -290,7 +277,8 @@ public class SonarQubeIssue {
 	/**
 	 * Sets the debt.
 	 *
-	 * @param debt the new debt
+	 * @param debt
+	 *            the new debt
 	 */
 	@JsonProperty("debt")
 	public void setDebt(String debt) {
@@ -310,7 +298,8 @@ public class SonarQubeIssue {
 	/**
 	 * Sets the author.
 	 *
-	 * @param author the new author
+	 * @param author
+	 *            the new author
 	 */
 	@JsonProperty("author")
 	public void setAuthor(String author) {
@@ -330,7 +319,8 @@ public class SonarQubeIssue {
 	/**
 	 * Sets the tags.
 	 *
-	 * @param tags the new tags
+	 * @param tags
+	 *            the new tags
 	 */
 	@JsonProperty("tags")
 	public void setTags(List<String> tags) {
@@ -350,7 +340,8 @@ public class SonarQubeIssue {
 	/**
 	 * Sets the creation date.
 	 *
-	 * @param creationDate the new creation date
+	 * @param creationDate
+	 *            the new creation date
 	 */
 	@JsonProperty("creationDate")
 	public void setCreationDate(Date creationDate) {
@@ -370,7 +361,8 @@ public class SonarQubeIssue {
 	/**
 	 * Sets the update date.
 	 *
-	 * @param updateDate the new update date
+	 * @param updateDate
+	 *            the new update date
 	 */
 	@JsonProperty("updateDate")
 	public void setUpdateDate(Date updateDate) {
@@ -390,8 +382,10 @@ public class SonarQubeIssue {
 	/**
 	 * Sets the additional property.
 	 *
-	 * @param name the name
-	 * @param value the value
+	 * @param name
+	 *            the name
+	 * @param value
+	 *            the value
 	 */
 	@JsonAnySetter
 	public void setAdditionalProperty(String name, Object value) {

@@ -4,21 +4,17 @@
           http://dozer.sourceforge.net/schema/beanmapping.xsd">
 
 	<mapping>
-		<class-a>org.w00tdevs.project.sonarviewer.external.sonarqube.domain.SonarQubeProject
+		<class-a>org.w00tdevs.project.sonarviewer.external.sonarqube.domain.SonarQubeIssue
 		</class-a>
-		<class-b>org.w00tdevs.project.sonarviewer.database.entity.Project
+		<class-b>org.w00tdevs.project.sonarviewer.database.entity.Issue
 		</class-b>
 		<field>
-			<a>id</a>
-			<b>projectId</b>
+			<a>rule</a>
+			<b>rule.key</b>
 		</field>
-		<field>
-			<a>k</a>
-			<b>key</b>
-		</field>
-		<field>
-			<a>nm</a>
-			<b>name</b>
+		<field custom-converter-id="tagNameConverter">
+			<a>tags</a>
+			<b>tags</b>
 		</field>
 	</mapping>
 

@@ -4,14 +4,13 @@
 *	\^/\_/\_/ |_(_|(/_\_/_> 
 *
 *	Project: sonarviewer-app
-*	Package: org.w00tdevs.project.sonarviewer.business.external.sonarqube.service.impl
+*	Package: org.w00tdevs.project.sonarviewer.external.sonarqube.service.impl
 *	Class: SonarQubeClientImpl.java
 *	Author: Alberto
-*	Last update: 17-mar-2016
+*	Last update: 23-mar-2016
 */
 package org.w00tdevs.project.sonarviewer.external.sonarqube.service.impl;
 
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -52,7 +51,9 @@ public class SonarQubeClientImpl implements SonarQubeClient {
 	 */
 	@Override
 	public IssuesSearchResponse getIssues(String projectKey, Integer pageNumber) {
-		Map<String, String> map = Collections.singletonMap(SonarQubeConstants.IssuesSearch.PROJECTKEY, projectKey);
+		Map<String, String> map = new HashMap<String, String>();
+		map.put(SonarQubeConstants.IssuesSearch.PROJECTKEY, projectKey);
+		map.put(SonarQubeConstants.IssuesSearch.PAGE, String.valueOf(pageNumber));
 		return executeGet(SonarQubeConstants.IssuesSearch.PATH, IssuesSearchResponse.class, map);
 	}
 

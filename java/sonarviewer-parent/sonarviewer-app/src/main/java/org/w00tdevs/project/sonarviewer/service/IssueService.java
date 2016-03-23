@@ -1,15 +1,20 @@
 /*
-*	    _  _                
-*	   / \/ \_|_ _| _     _ 
-*	\^/\_/\_/ |_(_|(/_\_/_> 
-*
-*	Project: sonarviewer-app
-*	Package: org.w00tdevs.project.sonarviewer.business.service
-*	Class: IssueService.java
-*	Author: Alberto
-*	Last update: 16-mar-2016
-*/
+ *	    _  _                
+ *	   / \/ \_|_ _| _     _ 
+ *	\^/\_/\_/ |_(_|(/_\_/_> 
+ *
+ *	Project: sonarviewer-app
+ *	Package: org.w00tdevs.project.sonarviewer.service
+ *	Class: IssueService.java
+ *	Author: Alberto
+ *	Last update: 22-mar-2016
+ */
 package org.w00tdevs.project.sonarviewer.service;
+
+import java.util.List;
+
+import org.w00tdevs.project.sonarviewer.database.entity.Issue;
+import org.w00tdevs.project.sonarviewer.database.entity.Project;
 
 /**
  * The Interface IssueService.
@@ -17,12 +22,12 @@ package org.w00tdevs.project.sonarviewer.service;
 public interface IssueService {
 
 	/**
-	 * Import issues for project.
+	 * Import issues from project.
 	 *
-	 * @param projectKey
-	 *            the project key
-	 * @return the long
+	 * @param project
+	 *            the project
+	 * @return the list
 	 */
-	Long importIssuesFromProject(String projectKey);
+	List<Issue> importIssuesFromProject(Project project);
 
 }

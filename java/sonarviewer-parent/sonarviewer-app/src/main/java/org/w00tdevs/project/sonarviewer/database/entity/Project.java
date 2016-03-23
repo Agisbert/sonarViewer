@@ -1,14 +1,14 @@
 /*
-*	    _  _                
-*	   / \/ \_|_ _| _     _ 
-*	\^/\_/\_/ |_(_|(/_\_/_> 
-*
-*	Project: sonarviewer-app
-*	Package: org.w00tdevs.project.sonarviewer.database.entity
-*	Class: Project.java
-*	Author: Alberto
-*	Last update: 16-mar-2016
-*/
+ *	    _  _                
+ *	   / \/ \_|_ _| _     _ 
+ *	\^/\_/\_/ |_(_|(/_\_/_> 
+ *
+ *	Project: sonarviewer-app
+ *	Package: org.w00tdevs.project.sonarviewer.database.entity
+ *	Class: Project.java
+ *	Author: Alberto
+ *	Last update: 22-mar-2016
+ */
 
 package org.w00tdevs.project.sonarviewer.database.entity;
 
@@ -21,23 +21,32 @@ import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import lombok.ToString;
+
 /**
- * The Class SonarQubeProject.
+ * The Class Project.
  */
 @Entity
 @Table(name = "project")
+
+/*
+ * (non-Javadoc)
+ * 
+ * @see java.lang.Object#toString()
+ */
+@ToString(includeFieldNames = true, of = { "projectId", "key", "name" })
 public class Project {
 
-	/** The id. */
+	/** The project id. */
 	@Id
 	@Column
 	private Long projectId;
 
-	/** The k. */
+	/** The key. */
 	@Column
 	private String key;
 
-	/** The nm. */
+	/** The name. */
 	@Column
 	private String name;
 
@@ -123,6 +132,25 @@ public class Project {
 	 */
 	public void setIssues(List<Issue> issues) {
 		this.issues = issues;
+	}
+
+	/**
+	 * Gets the profiles.
+	 *
+	 * @return the profiles
+	 */
+	public List<Profile> getProfiles() {
+		return profiles;
+	}
+
+	/**
+	 * Sets the profiles.
+	 *
+	 * @param profiles
+	 *            the new profiles
+	 */
+	public void setProfiles(List<Profile> profiles) {
+		this.profiles = profiles;
 	}
 
 }

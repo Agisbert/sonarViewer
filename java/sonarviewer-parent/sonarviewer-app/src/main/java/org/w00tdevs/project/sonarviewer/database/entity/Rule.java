@@ -4,10 +4,10 @@
 *	\^/\_/\_/ |_(_|(/_\_/_> 
 *
 *	Project: sonarviewer-app
-*	Package: org.w00tdevs.project.sonarviewer.business.database.entity
+*	Package: org.w00tdevs.project.sonarviewer.database.entity
 *	Class: Rule.java
 *	Author: Alberto
-*	Last update: 21-mar-2016
+*	Last update: 23-mar-2016
 */
 
 package org.w00tdevs.project.sonarviewer.database.entity;
@@ -120,7 +120,7 @@ public class Rule {
 	/** The tags. */
 	@ManyToMany
 	@JoinTable(name = "rulestags", joinColumns = { @JoinColumn(name = "ruleId") }, inverseJoinColumns = {
-			@JoinColumn(name = "tagId") })
+			@JoinColumn(name = "name") })
 	private List<Tag> tags;
 
 	/** The profile. */

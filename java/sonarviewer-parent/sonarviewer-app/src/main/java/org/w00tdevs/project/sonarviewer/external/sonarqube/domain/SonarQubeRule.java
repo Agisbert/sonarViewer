@@ -4,10 +4,10 @@
 *	\^/\_/\_/ |_(_|(/_\_/_> 
 *
 *	Project: sonarviewer-app
-*	Package: org.w00tdevs.project.sonarviewer.business.external.sonarqube.domain
+*	Package: org.w00tdevs.project.sonarviewer.external.sonarqube.domain
 *	Class: SonarQubeRule.java
 *	Author: Alberto
-*	Last update: 21-mar-2016
+*	Last update: 23-mar-2016
 */
 
 package org.w00tdevs.project.sonarviewer.external.sonarqube.domain;
@@ -78,7 +78,7 @@ public class SonarQubeRule {
 
 	/** The tags. */
 	@JsonProperty("tags")
-	private List<Object> tags = new ArrayList<Object>();
+	private List<String> tags = new ArrayList<String>();
 
 	/** The sys tags. */
 	@JsonProperty("sysTags")
@@ -323,7 +323,7 @@ public class SonarQubeRule {
 	 * @return the tags
 	 */
 	@JsonProperty("tags")
-	public List<Object> getTags() {
+	public List<String> getTags() {
 		return tags;
 	}
 
@@ -334,7 +334,7 @@ public class SonarQubeRule {
 	 *            the new tags
 	 */
 	@JsonProperty("tags")
-	public void setTags(List<Object> tags) {
+	public void setTags(List<String> tags) {
 		this.tags = tags;
 	}
 

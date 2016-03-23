@@ -4,7 +4,7 @@
 *	\^/\_/\_/ |_(_|(/_\_/_> 
 *
 *	Project: sonarviewer-app
-*	Package: org.w00tdevs.project.sonarviewer.business.database.entity
+*	Package: org.w00tdevs.project.sonarviewer.database.entity
 *	Class: Profile.java
 *	Author: Alberto
 *	Last update: 22-mar-2016
@@ -26,11 +26,14 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 
+import lombok.ToString;
+
 /**
  * The Class Profile.
  */
 @Entity
 @Table(name = "profile")
+@ToString(includeFieldNames = true, of = { "profileId", "key", "name" })
 public class Profile {
 
 	/** The profile id. */

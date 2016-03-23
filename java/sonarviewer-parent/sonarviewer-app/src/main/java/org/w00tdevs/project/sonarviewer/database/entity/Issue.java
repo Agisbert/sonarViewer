@@ -4,10 +4,10 @@
 *	\^/\_/\_/ |_(_|(/_\_/_> 
 *
 *	Project: sonarviewer-app
-*	Package: org.w00tdevs.project.sonarviewer.business.database.entity
+*	Package: org.w00tdevs.project.sonarviewer.database.entity
 *	Class: Issue.java
 *	Author: Alberto
-*	Last update: 21-mar-2016
+*	Last update: 22-mar-2016
 */
 
 package org.w00tdevs.project.sonarviewer.database.entity;
@@ -27,11 +27,14 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 
+import lombok.ToString;
+
 /**
  * The Class Issue.
  */
 @Entity
 @Table(name = "issue")
+@ToString(includeFieldNames = true, of = { "issueId", "key", "severity" })
 public class Issue {
 
 	/** The issue id. */
@@ -98,7 +101,7 @@ public class Issue {
 	/** The tags. */
 	@ManyToMany
 	@JoinTable(name = "issuestags", joinColumns = { @JoinColumn(name = "issueId") }, inverseJoinColumns = {
-			@JoinColumn(name = "tagId") })
+			@JoinColumn(name = "name") })
 	private List<Tag> tags;
 
 	/**

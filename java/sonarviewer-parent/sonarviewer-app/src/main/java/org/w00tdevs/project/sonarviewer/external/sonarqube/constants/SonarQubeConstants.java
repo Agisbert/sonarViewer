@@ -1,14 +1,14 @@
 /*
-*	    _  _                
-*	   / \/ \_|_ _| _     _ 
-*	\^/\_/\_/ |_(_|(/_\_/_> 
-*
-*	Project: sonarviewer-app
-*	Package: org.w00tdevs.project.sonarviewer.sonarqube.client.constants
-*	Class: SonarQubeConstants.java
-*	Author: Alberto
-*	Last update: 16-mar-2016
-*/
+ *	    _  _                
+ *	   / \/ \_|_ _| _     _ 
+ *	\^/\_/\_/ |_(_|(/_\_/_> 
+ *
+ *	Project: sonarviewer-app
+ *	Package: org.w00tdevs.project.sonarviewer.external.sonarqube.constants
+ *	Class: SonarQubeConstants.java
+ *	Author: Alberto
+ *	Last update: 22-mar-2016
+ */
 package org.w00tdevs.project.sonarviewer.external.sonarqube.constants;
 
 /**
@@ -36,7 +36,10 @@ public final class SonarQubeConstants {
 		}
 
 		/** The Constant PATH. */
-		public static final String PATH = "/api/issues/search";
+		public static final String PATH = "/api/issues/search?componentKeys={componentKeys}&p={p}";
+
+		/** The Constant PATH. */
+		public static final String PATH_author = "/api/issues/search?componentKeys={componentKeys}&p={p}&author={author}";
 
 		/** The Constant PROJECTKEY. */
 		public static final String PROJECTKEY = "componentKeys";

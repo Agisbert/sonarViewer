@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.database.entity
 *	Class: Tag.java
 *	Author: Alberto
-*	Last update: 14-mar-2016
+*	Last update: 22-mar-2016
 */
 package org.w00tdevs.project.sonarviewer.database.entity;
 
@@ -19,16 +19,15 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import lombok.ToString;
+
 /**
  * The Class Tag.
  */
 @Entity
 @Table(name = "tag")
+@ToString(includeFieldNames = true, of = { "name" })
 public class Tag {
-
-	/** The tag id. */
-	@Column
-	private Long tagId;
 
 	/** The name. */
 	@Id
@@ -39,24 +38,9 @@ public class Tag {
 	@ManyToMany(mappedBy = "tags")
 	private List<Issue> issues;
 
-	/**
-	 * Gets the tag id.
-	 *
-	 * @return the tag id
-	 */
-	public Long getTagId() {
-		return tagId;
-	}
-
-	/**
-	 * Sets the tag id.
-	 *
-	 * @param tagId
-	 *            the new tag id
-	 */
-	public void setTagId(Long tagId) {
-		this.tagId = tagId;
-	}
+	/** The rules. */
+	@ManyToMany(mappedBy = "tags")
+	private List<Rule> rules;
 
 	/**
 	 * Gets the name.
@@ -94,6 +78,25 @@ public class Tag {
 	 */
 	public void setIssues(List<Issue> issues) {
 		this.issues = issues;
+	}
+
+	/**
+	 * Gets the rules.
+	 *
+	 * @return the rules
+	 */
+	public List<Rule> getRules() {
+		return rules;
+	}
+
+	/**
+	 * Sets the rules.
+	 *
+	 * @param rules
+	 *            the new rules
+	 */
+	public void setRules(List<Rule> rules) {
+		this.rules = rules;
 	}
 
 }

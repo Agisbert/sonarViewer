@@ -1,14 +1,14 @@
 /*
-*	    _  _                
-*	   / \/ \_|_ _| _     _ 
-*	\^/\_/\_/ |_(_|(/_\_/_> 
-*
-*	Project: sonarviewer-app
-*	Package: org.w00tdevs.project.sonarviewer.config
-*	Class: beansConfig.java
-*	Author: Alberto
-*	Last update: 16-mar-2016
-*/
+ *	    _  _                
+ *	   / \/ \_|_ _| _     _ 
+ *	\^/\_/\_/ |_(_|(/_\_/_> 
+ *
+ *	Project: sonarviewer-app
+ *	Package: org.w00tdevs.project.sonarviewer.config
+ *	Class: beansConfig.java
+ *	Author: Alberto
+ *	Last update: 23-mar-2016
+ */
 package org.w00tdevs.project.sonarviewer.config;
 
 import java.io.IOException;
@@ -45,11 +45,15 @@ public class beansConfig {
 	 *
 	 * @return the mapper
 	 * @throws IOException
+	 *             Signals that an I/O exception has occurred.
 	 */
 	@Bean
 	public Mapper dozerBeanMapper() throws IOException {
 		DozerBeanMapper dozerBeanMapper = new DozerBeanMapper();
-		dozerBeanMapper.setMappingFiles(Arrays.asList("dozerCustomMappingFiles/ProjectDozerMapper.xml"));
+		// Set the custom mapping files
+		dozerBeanMapper.setMappingFiles(Arrays.asList("dozerCustomMappingFiles/ProjectDozerMapper.xml",
+				"dozerCustomMappingFiles/IssueDozerMapper.xml", "dozerCustomMappingFiles/RuleDozerMapper.xml"));
+		// Set the custom converters if any
 		LOG.info("Dozermapper created!");
 		return dozerBeanMapper;
 	}
@@ -68,7 +72,7 @@ public class beansConfig {
 	}
 
 	/**
-	 * Jackson2 object mapper builder. Custom mappings
+	 * Jackson2 object mapper builder.
 	 *
 	 * @return the jackson2 object mapper builder
 	 */
