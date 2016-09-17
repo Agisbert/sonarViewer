@@ -12,10 +12,7 @@
 			<a>rule</a>
 			<b>rule.key</b>
 		</field>
-		<field custom-converter-id="tagNameConverter">
-			<a>tags</a>
-			<b>tags</b>
-		</field>
+
 	</mapping>
 
 </mappings> 

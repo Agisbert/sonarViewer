@@ -1,0 +1,6402 @@
+{
+  "total": 100,
+  "p": 1,
+  "ps": 100,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 100,
+    "total": 100
+  },
+  "issues": [
+    {
+      "key": "AVGhRUsXIQHvyYQpvrER",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/jasper/tagplugins/jstl/core/ForEach.java",
+      "componentId": 51152,
+      "project": "org.apache:tomcat",
+      "line": 90,
+      "textRange": {
+        "startLine": 90,
+        "endLine": 90,
+        "startOffset": 52,
+        "endOffset": 57
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Declare \"stepV\" on a separate line.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "remm",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2015-12-14T17:07:14+0100",
+      "updateDate": "2016-07-05T12:42:31+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVGhRUsXIQHvyYQpvrES",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/jasper/tagplugins/jstl/core/ForEach.java",
+      "componentId": 51152,
+      "project": "org.apache:tomcat",
+      "line": 90,
+      "textRange": {
+        "startLine": 90,
+        "endLine": 90,
+        "startOffset": 28,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Declare \"beginV\" on a separate line.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "remm",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2015-12-14T17:07:14+0100",
+      "updateDate": "2016-07-05T12:42:31+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVQ4b9fjGM2yK8eiewF1",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/el/parser/ELParser.html",
+      "componentId": 601834,
+      "project": "org.apache:tomcat",
+      "line": 37,
+      "textRange": {
+        "startLine": 37,
+        "endLine": 37,
+        "startOffset": 0,
+        "endOffset": 75
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this deprecated \"VALIGN\" attribute.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "remm",
+      "tags": [
+        "html5",
+        "obsolete"
+      ],
+      "creationDate": "2016-04-21T12:44:06+0200",
+      "updateDate": "2016-07-05T12:42:31+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVQ4b9fjGM2yK8eiewF3",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/el/parser/ELParser.html",
+      "componentId": 601834,
+      "project": "org.apache:tomcat",
+      "line": 37,
+      "textRange": {
+        "startLine": 37,
+        "endLine": 37,
+        "startOffset": 0,
+        "endOffset": 75
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this deprecated \"ALIGN\" attribute.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "remm",
+      "tags": [
+        "html5",
+        "obsolete"
+      ],
+      "creationDate": "2016-04-21T12:44:06+0200",
+      "updateDate": "2016-07-05T12:42:31+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVGhRUsXIQHvyYQpvrEQ",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/jasper/tagplugins/jstl/core/ForEach.java",
+      "componentId": 51152,
+      "project": "org.apache:tomcat",
+      "line": 90,
+      "textRange": {
+        "startLine": 90,
+        "endLine": 90,
+        "startOffset": 41,
+        "endOffset": 45
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Declare \"endV\" on a separate line.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "remm",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2015-12-14T17:07:14+0100",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVKK22pSu71z4NC9g1Ud",
+      "rule": "squid:S1659",
+      "severity": "BLOCKER",
+      "component": "org.apache:tomcat:java/org/apache/tomcat/util/IntrospectionUtils.java",
+      "componentId": 51267,
+      "project": "org.apache:tomcat",
+      "line": 339,
+      "textRange": {
+        "startLine": 339,
+        "endLine": 339,
+        "startOffset": 37,
+        "endOffset": 56
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "NullPointerException might be thrown as 'methodParams' is nullable here",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "remm",
+      "tags": [
+        "cert",
+        "cwe",
+        "owasp-a1",
+        "owasp-a2",
+        "owasp-a6"
+      ],
+      "creationDate": "2016-01-28T17:05:56+0100",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "BUG"
+    },
+    {
+      "key": "AVKK22pTu71z4NC9g1Ue",
+      "rule": "squid:S1659",
+      "severity": "BLOCKER",
+      "component": "org.apache:tomcat:java/org/apache/tomcat/util/IntrospectionUtils.java",
+      "componentId": 51267,
+      "project": "org.apache:tomcat",
+      "line": 339,
+      "textRange": {
+        "startLine": 339,
+        "endLine": 339,
+        "startOffset": 20,
+        "endOffset": 33
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "NullPointerException might be thrown as 'params' is nullable here",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "remm",
+      "tags": [
+        "cert",
+        "cwe",
+        "owasp-a1",
+        "owasp-a2",
+        "owasp-a6"
+      ],
+      "creationDate": "2016-01-28T17:05:56+0100",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "BUG"
+    },
+    {
+      "key": "AVQ4b9fjGM2yK8eiewF2",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/el/parser/ELParser.html",
+      "componentId": 601834,
+      "project": "org.apache:tomcat",
+      "line": 37,
+      "textRange": {
+        "startLine": 37,
+        "endLine": 37,
+        "startOffset": 0,
+        "endOffset": 75
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this deprecated \"NAME\" attribute.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "remm",
+      "tags": [
+        "html5",
+        "obsolete"
+      ],
+      "creationDate": "2016-04-21T12:44:06+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVRcfENZGmESyfsTO5CG",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "line": 792,
+      "textRange": {
+        "startLine": 792,
+        "endLine": 795,
+        "startOffset": 66,
+        "endOffset": 17
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 789,
+                "endLine": 792,
+                "startOffset": 47,
+                "endOffset": 17
+              },
+              "msg": "Original"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "This branch's code block is the same as the block for the branch on line 789.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "remm",
+      "tags": [
+        "design",
+        "suspicious"
+      ],
+      "creationDate": "2016-04-28T12:43:58+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVRcfENaGmESyfsTO5CH",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "line": 1095,
+      "textRange": {
+        "startLine": 1095,
+        "endLine": 1098,
+        "startOffset": 71,
+        "endOffset": 21
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1092,
+                "endLine": 1095,
+                "startOffset": 52,
+                "endOffset": 21
+              },
+              "msg": "Original"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "This branch's code block is the same as the block for the branch on line 1092.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "remm",
+      "tags": [
+        "design",
+        "suspicious"
+      ],
+      "creationDate": "2016-04-28T12:43:58+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVRcfENdGmESyfsTO5Ch",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "flows": [],
+      "status": "OPEN",
+      "message": "This file has 1,745 lines, which is greater than 1,000 authorized. Split it into smaller files.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2016-04-28T12:43:58+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVW1hNbfSARHJEIGCbwv",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "line": 106,
+      "textRange": {
+        "startLine": 106,
+        "endLine": 106,
+        "startOffset": 8,
+        "endOffset": 12
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Introduce a new variable instead of reusing the parameter \"name\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "misra",
+        "pitfall"
+      ],
+      "creationDate": "2016-07-04T12:42:12+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVW1hNbgSARHJEIGCbw0",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "line": 332,
+      "textRange": {
+        "startLine": 332,
+        "endLine": 332,
+        "startOffset": 8,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Introduce a new variable instead of reusing the parameter \"hostName\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "misra",
+        "pitfall"
+      ],
+      "creationDate": "2016-07-04T12:42:12+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVW1hNbgSARHJEIGCbw1",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "line": 376,
+      "textRange": {
+        "startLine": 376,
+        "endLine": 376,
+        "startOffset": 8,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Introduce a new variable instead of reusing the parameter \"hostName\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "misra",
+        "pitfall"
+      ],
+      "creationDate": "2016-07-04T12:42:12+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVW1hNbgSARHJEIGCbw2",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "line": 418,
+      "textRange": {
+        "startLine": 418,
+        "endLine": 418,
+        "startOffset": 8,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Introduce a new variable instead of reusing the parameter \"hostName\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "misra",
+        "pitfall"
+      ],
+      "creationDate": "2016-07-04T12:42:12+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVW1hNbgSARHJEIGCbw3",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "line": 429,
+      "textRange": {
+        "startLine": 429,
+        "endLine": 429,
+        "startOffset": 8,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Introduce a new variable instead of reusing the parameter \"hostName\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "misra",
+        "pitfall"
+      ],
+      "creationDate": "2016-07-04T12:42:12+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVW1hNbgSARHJEIGCbww",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "line": 152,
+      "textRange": {
+        "startLine": 152,
+        "endLine": 152,
+        "startOffset": 8,
+        "endOffset": 12
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Introduce a new variable instead of reusing the parameter \"name\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "misra",
+        "pitfall"
+      ],
+      "creationDate": "2016-07-04T12:42:12+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVW1hNbgSARHJEIGCbwx",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "line": 181,
+      "textRange": {
+        "startLine": 181,
+        "endLine": 181,
+        "startOffset": 8,
+        "endOffset": 13
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Introduce a new variable instead of reusing the parameter \"alias\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "misra",
+        "pitfall"
+      ],
+      "creationDate": "2016-07-04T12:42:12+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVW1hNbgSARHJEIGCbwy",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "line": 223,
+      "textRange": {
+        "startLine": 223,
+        "endLine": 223,
+        "startOffset": 8,
+        "endOffset": 13
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Introduce a new variable instead of reusing the parameter \"alias\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "misra",
+        "pitfall"
+      ],
+      "creationDate": "2016-07-04T12:42:12+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVW1hNbgSARHJEIGCbwz",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "line": 266,
+      "textRange": {
+        "startLine": 266,
+        "endLine": 266,
+        "startOffset": 8,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Introduce a new variable instead of reusing the parameter \"hostName\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "misra",
+        "pitfall"
+      ],
+      "creationDate": "2016-07-04T12:42:12+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVW1hNbhSARHJEIGCbw4",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "line": 530,
+      "textRange": {
+        "startLine": 530,
+        "endLine": 530,
+        "startOffset": 8,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Introduce a new variable instead of reusing the parameter \"hostName\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "misra",
+        "pitfall"
+      ],
+      "creationDate": "2016-07-04T12:42:12+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVW1hNbhSARHJEIGCbw5",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "line": 615,
+      "textRange": {
+        "startLine": 615,
+        "endLine": 615,
+        "startOffset": 8,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Introduce a new variable instead of reusing the parameter \"hostName\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "misra",
+        "pitfall"
+      ],
+      "creationDate": "2016-07-04T12:42:12+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVW1hNbhSARHJEIGCbw6",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "line": 638,
+      "textRange": {
+        "startLine": 638,
+        "endLine": 638,
+        "startOffset": 8,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Introduce a new variable instead of reusing the parameter \"hostName\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "misra",
+        "pitfall"
+      ],
+      "creationDate": "2016-07-04T12:42:12+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVW1hNbhSARHJEIGCbw7",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "line": 671,
+      "textRange": {
+        "startLine": 671,
+        "endLine": 671,
+        "startOffset": 8,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Introduce a new variable instead of reusing the parameter \"hostName\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "misra",
+        "pitfall"
+      ],
+      "creationDate": "2016-07-04T12:42:12+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "a6bf7e1a-676b-46c2-ae9b-13623c51a048",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "componentId": 423348,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 743,
+        "endLine": 743,
+        "startOffset": 19,
+        "endOffset": 23
+      },
+      "flows": [],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Remove this useless assignment to local variable \"length\".",
+      "effort": "15min",
+      "debt": "15min",
+      "author": "remm",
+      "tags": [
+        "cert",
+        "cwe",
+        "suspicious",
+        "unused"
+      ],
+      "creationDate": "2015-10-12T17:05:24+0200",
+      "updateDate": "2016-07-04T12:42:12+0200",
+      "closeDate": "2016-07-04T12:42:12+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVRcfD38GmESyfsTO4_0",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/core/StandardWrapper.java",
+      "componentId": 50717,
+      "project": "org.apache:tomcat",
+      "line": 1500,
+      "textRange": {
+        "startLine": 1500,
+        "endLine": 1500,
+        "startOffset": 12,
+        "endOffset": 26
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1498,
+                "endLine": 1498,
+                "startOffset": 12,
+                "endOffset": 26
+              },
+              "msg": "Original"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "This branch's code block is the same as the block for the branch on line 1498.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "remm",
+      "tags": [
+        "design",
+        "suspicious"
+      ],
+      "creationDate": "2016-04-28T12:43:58+0200",
+      "updateDate": "2016-07-02T12:42:01+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVRcfD38GmESyfsTO4_1",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/core/StandardWrapper.java",
+      "componentId": 50717,
+      "project": "org.apache:tomcat",
+      "flows": [],
+      "status": "OPEN",
+      "message": "This file has 1,873 lines, which is greater than 1,000 authorized. Split it into smaller files.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "remm",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2016-04-28T12:43:58+0200",
+      "updateDate": "2016-07-02T12:42:01+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVRcfFRoGmESyfsTO5Kp",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/coyote/AbstractProtocol.java",
+      "componentId": 399178,
+      "project": "org.apache:tomcat",
+      "flows": [],
+      "status": "OPEN",
+      "message": "This file has 1,151 lines, which is greater than 1,000 authorized. Split it into smaller files.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2016-04-28T12:43:58+0200",
+      "updateDate": "2016-07-02T12:42:01+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVWrODewSARHJEIGBKOV",
+      "rule": "squid:S1659",
+      "severity": "BLOCKER",
+      "component": "org.apache:tomcat:java/org/apache/catalina/core/StandardWrapper.java",
+      "componentId": 50717,
+      "project": "org.apache:tomcat",
+      "line": 1389,
+      "textRange": {
+        "startLine": 1389,
+        "endLine": 1389,
+        "startOffset": 29,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Catch Exception instead of Throwable.",
+      "effort": "20min",
+      "debt": "20min",
+      "author": "markt",
+      "tags": [
+        "cert",
+        "cwe",
+        "error-handling"
+      ],
+      "creationDate": "2016-07-02T12:42:01+0200",
+      "updateDate": "2016-07-02T12:42:01+0200",
+      "type": "VULNERABILITY"
+    },
+    {
+      "key": "AVWrOEPvSARHJEIGBKOW",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/coyote/AbstractProtocol.java",
+      "componentId": 399178,
+      "project": "org.apache:tomcat",
+      "line": 884,
+      "textRange": {
+        "startLine": 884,
+        "endLine": 884,
+        "startOffset": 32,
+        "endOffset": 35
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 730,
+                "endLine": 730,
+                "startOffset": 12,
+                "endOffset": 15
+              },
+              "msg": "Nesting + 1"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Extract this nested try block into a separate method.",
+      "effort": "20min",
+      "debt": "20min",
+      "author": "markt",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2016-07-02T12:42:01+0200",
+      "updateDate": "2016-07-02T12:42:01+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVWrOEPvSARHJEIGBKOX",
+      "rule": "squid:S1659",
+      "severity": "BLOCKER",
+      "component": "org.apache:tomcat:java/org/apache/coyote/AbstractProtocol.java",
+      "componentId": 399178,
+      "project": "org.apache:tomcat",
+      "line": 886,
+      "textRange": {
+        "startLine": 886,
+        "endLine": 886,
+        "startOffset": 41,
+        "endOffset": 50
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Catch Exception instead of Throwable.",
+      "effort": "20min",
+      "debt": "20min",
+      "author": "markt",
+      "tags": [
+        "cert",
+        "cwe",
+        "error-handling"
+      ],
+      "creationDate": "2016-07-02T12:42:01+0200",
+      "updateDate": "2016-07-02T12:42:01+0200",
+      "type": "VULNERABILITY"
+    },
+    {
+      "key": "AVWrOEn7SARHJEIGBKOY",
+      "rule": "squid:S1659",
+      "severity": "BLOCKER",
+      "component": "org.apache:tomcat:java/org/apache/jasper/runtime/TagHandlerPool.java",
+      "componentId": 51141,
+      "project": "org.apache:tomcat",
+      "line": 164,
+      "textRange": {
+        "startLine": 164,
+        "endLine": 164,
+        "startOffset": 17,
+        "endOffset": 26
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Catch Exception instead of Throwable.",
+      "effort": "20min",
+      "debt": "20min",
+      "author": "markt",
+      "tags": [
+        "cert",
+        "cwe",
+        "error-handling"
+      ],
+      "creationDate": "2016-07-02T12:42:01+0200",
+      "updateDate": "2016-07-02T12:42:01+0200",
+      "type": "VULNERABILITY"
+    },
+    {
+      "key": "AVWrOEopSARHJEIGBKOZ",
+      "rule": "squid:S1659",
+      "severity": "BLOCKER",
+      "component": "org.apache:tomcat:java/org/apache/jasper/servlet/JspServletWrapper.java",
+      "componentId": 51148,
+      "project": "org.apache:tomcat",
+      "line": 491,
+      "textRange": {
+        "startLine": 491,
+        "endLine": 491,
+        "startOffset": 21,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Catch Exception instead of Throwable.",
+      "effort": "20min",
+      "debt": "20min",
+      "author": "markt",
+      "tags": [
+        "cert",
+        "cwe",
+        "error-handling"
+      ],
+      "creationDate": "2016-07-02T12:42:01+0200",
+      "updateDate": "2016-07-02T12:42:01+0200",
+      "type": "VULNERABILITY"
+    },
+    {
+      "key": "AVWrOFdpSARHJEIGBKOa",
+      "rule": "squid:S1659",
+      "severity": "BLOCKER",
+      "component": "org.apache:tomcat:java/org/apache/tomcat/websocket/WsSession.java",
+      "componentId": 445009,
+      "project": "org.apache:tomcat",
+      "line": 557,
+      "textRange": {
+        "startLine": 557,
+        "endLine": 557,
+        "startOffset": 25,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Catch Exception instead of Throwable.",
+      "effort": "20min",
+      "debt": "20min",
+      "author": "markt",
+      "tags": [
+        "cert",
+        "cwe",
+        "error-handling"
+      ],
+      "creationDate": "2016-07-02T12:42:01+0200",
+      "updateDate": "2016-07-02T12:42:01+0200",
+      "type": "VULNERABILITY"
+    },
+    {
+      "key": "d5927477-afb4-4d32-b223-cf896f864ecb",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/core/StandardWrapper.java",
+      "componentId": 50717,
+      "project": "org.apache:tomcat",
+      "line": 1328,
+      "textRange": {
+        "startLine": 1328,
+        "endLine": 1328,
+        "startOffset": 29,
+        "endOffset": 35
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1328,
+                "endLine": 1328,
+                "startOffset": 29,
+                "endOffset": 35
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1331,
+                "endLine": 1331,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1331,
+                "endLine": 1331,
+                "startOffset": 31,
+                "endOffset": 33
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1332,
+                "endLine": 1332,
+                "startOffset": 12,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1337,
+                "endLine": 1337,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1340,
+                "endLine": 1340,
+                "startOffset": 12,
+                "endOffset": 17
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1340,
+                "endLine": 1340,
+                "startOffset": 35,
+                "endOffset": 37
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1341,
+                "endLine": 1341,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1348,
+                "endLine": 1348,
+                "startOffset": 18,
+                "endOffset": 23
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1355,
+                "endLine": 1355,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1357,
+                "endLine": 1357,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1363,
+                "endLine": 1363,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1373,
+                "endLine": 1373,
+                "startOffset": 14,
+                "endOffset": 19
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1381,
+                "endLine": 1381,
+                "startOffset": 16,
+                "endOffset": 21
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1386,
+                "endLine": 1386,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1389,
+                "endLine": 1389,
+                "startOffset": 22,
+                "endOffset": 27
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1395,
+                "endLine": 1395,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1397,
+                "endLine": 1397,
+                "startOffset": 20,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1397,
+                "endLine": 1397,
+                "startOffset": 36,
+                "endOffset": 38
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1398,
+                "endLine": 1398,
+                "startOffset": 24,
+                "endOffset": 26
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1412,
+                "endLine": 1412,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1412,
+                "endLine": 1412,
+                "startOffset": 25,
+                "endOffset": 27
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1416,
+                "endLine": 1416,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1416,
+                "endLine": 1416,
+                "startOffset": 30,
+                "endOffset": 32
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1418,
+                "endLine": 1418,
+                "startOffset": 16,
+                "endOffset": 21
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1420,
+                "endLine": 1420,
+                "startOffset": 20,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1430,
+                "endLine": 1430,
+                "startOffset": 20,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1434,
+                "endLine": 1434,
+                "startOffset": 14,
+                "endOffset": 19
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1441,
+                "endLine": 1441,
+                "startOffset": 16,
+                "endOffset": 21
+              },
+              "msg": "+1"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "The Cyclomatic Complexity of this method \"unload\" is 29 which is greater than 10 authorized.",
+      "effort": "29min",
+      "debt": "29min",
+      "author": "mturk",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2013-09-12T19:50:55+0200",
+      "updateDate": "2016-07-02T12:42:01+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "d7ffb37c-0dae-4bb0-b8dd-416314a3ddad",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/coyote/AbstractProtocol.java",
+      "componentId": 399178,
+      "project": "org.apache:tomcat",
+      "line": 708,
+      "textRange": {
+        "startLine": 708,
+        "endLine": 708,
+        "startOffset": 27,
+        "endOffset": 34
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 708,
+                "endLine": 708,
+                "startOffset": 27,
+                "endOffset": 34
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 709,
+                "endLine": 709,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 713,
+                "endLine": 713,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 715,
+                "endLine": 715,
+                "startOffset": 16,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 721,
+                "endLine": 721,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 722,
+                "endLine": 722,
+                "startOffset": 20,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 721,
+                "endLine": 721,
+                "startOffset": 50,
+                "endOffset": 52
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 725,
+                "endLine": 725,
+                "startOffset": 16,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 731,
+                "endLine": 731,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 733,
+                "endLine": 733,
+                "startOffset": 20,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 736,
+                "endLine": 736,
+                "startOffset": 24,
+                "endOffset": 26
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 739,
+                "endLine": 739,
+                "startOffset": 31,
+                "endOffset": 33
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 750,
+                "endLine": 750,
+                "startOffset": 28,
+                "endOffset": 30
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 755,
+                "endLine": 755,
+                "startOffset": 28,
+                "endOffset": 34
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 767,
+                "endLine": 767,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 770,
+                "endLine": 770,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 784,
+                "endLine": 784,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 787,
+                "endLine": 787,
+                "startOffset": 20,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 792,
+                "endLine": 792,
+                "startOffset": 24,
+                "endOffset": 26
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 795,
+                "endLine": 795,
+                "startOffset": 28,
+                "endOffset": 30
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 802,
+                "endLine": 802,
+                "startOffset": 32,
+                "endOffset": 34
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 807,
+                "endLine": 807,
+                "startOffset": 32,
+                "endOffset": 38
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 826,
+                "endLine": 826,
+                "startOffset": 28,
+                "endOffset": 30
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 840,
+                "endLine": 840,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 845,
+                "endLine": 845,
+                "startOffset": 20,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 848,
+                "endLine": 848,
+                "startOffset": 23,
+                "endOffset": 25
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 854,
+                "endLine": 854,
+                "startOffset": 23,
+                "endOffset": 25
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 860,
+                "endLine": 860,
+                "startOffset": 23,
+                "endOffset": 25
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 866,
+                "endLine": 866,
+                "startOffset": 20,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 873,
+                "endLine": 873,
+                "startOffset": 20,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 877,
+                "endLine": 877,
+                "startOffset": 24,
+                "endOffset": 26
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 886,
+                "endLine": 886,
+                "startOffset": 34,
+                "endOffset": 39
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 897,
+                "endLine": 897,
+                "startOffset": 16,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 898,
+                "endLine": 898,
+                "startOffset": 14,
+                "endOffset": 19
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 902,
+                "endLine": 902,
+                "startOffset": 14,
+                "endOffset": 19
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 906,
+                "endLine": 906,
+                "startOffset": 14,
+                "endOffset": 19
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 915,
+                "endLine": 915,
+                "startOffset": 12,
+                "endOffset": 17
+              },
+              "msg": "+1"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "The Cyclomatic Complexity of this method \"process\" is 37 which is greater than 10 authorized.",
+      "effort": "37min",
+      "debt": "37min",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2013-09-12T19:50:55+0200",
+      "updateDate": "2016-07-02T12:42:01+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "46b856e6-bbbe-481d-bb33-966db45bb4bd",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/coyote/http2/Stream.java",
+      "componentId": 852251,
+      "project": "org.apache:tomcat",
+      "line": 496,
+      "textRange": {
+        "startLine": 496,
+        "endLine": 496,
+        "startOffset": 37,
+        "endOffset": 42
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 496,
+                "endLine": 496,
+                "startOffset": 37,
+                "endOffset": 42
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 498,
+                "endLine": 498,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 503,
+                "endLine": 503,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 504,
+                "endLine": 504,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 504,
+                "endLine": 504,
+                "startOffset": 27,
+                "endOffset": 29
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 510,
+                "endLine": 510,
+                "startOffset": 16,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 514,
+                "endLine": 514,
+                "startOffset": 12,
+                "endOffset": 17
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 516,
+                "endLine": 516,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 519,
+                "endLine": 519,
+                "startOffset": 20,
+                "endOffset": 26
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 521,
+                "endLine": 521,
+                "startOffset": 16,
+                "endOffset": 21
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 526,
+                "endLine": 526,
+                "startOffset": 55,
+                "endOffset": 57
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 526,
+                "endLine": 526,
+                "startOffset": 45,
+                "endOffset": 47
+              },
+              "msg": "+1"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "The Cyclomatic Complexity of this method \"flush\" is 12 which is greater than 10 authorized.",
+      "effort": "12min",
+      "debt": "12min",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2015-08-20T17:05:23+0200",
+      "updateDate": "2016-07-01T12:43:01+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVRcfDnaGmESyfsTO4-8",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/connector/Request.java",
+      "componentId": 50689,
+      "project": "org.apache:tomcat",
+      "line": 2063,
+      "textRange": {
+        "startLine": 2063,
+        "endLine": 2065,
+        "startOffset": 87,
+        "endOffset": 13
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2060,
+                "endLine": 2062,
+                "startOffset": 33,
+                "endOffset": 13
+              },
+              "msg": "Original"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "This branch's code block is the same as the block for the branch on line 2060.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "markt",
+      "tags": [
+        "design",
+        "suspicious"
+      ],
+      "creationDate": "2016-04-28T12:43:58+0200",
+      "updateDate": "2016-07-01T12:43:01+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVRcfDnbGmESyfsTO4--",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/connector/Request.java",
+      "componentId": 50689,
+      "project": "org.apache:tomcat",
+      "flows": [],
+      "status": "OPEN",
+      "message": "This file has 3,497 lines, which is greater than 1,000 authorized. Split it into smaller files.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2016-04-28T12:43:58+0200",
+      "updateDate": "2016-07-01T12:43:01+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "0f675512-82e0-4e65-951b-41249d50ef97",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/util/DOMWriter.java",
+      "componentId": 50976,
+      "project": "org.apache:tomcat",
+      "line": 58,
+      "textRange": {
+        "startLine": 58,
+        "endLine": 58,
+        "startOffset": 12,
+        "endOffset": 36
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Reduce this switch case number of lines from 8 to at most 5, for example by extracting code into methods.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2014-07-07T13:56:20+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "115fa715-1a99-427f-b21b-09e512014bb8",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/util/MIME2Java.java",
+      "componentId": 50986,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 506,
+        "endLine": 506,
+        "startOffset": 41,
+        "endOffset": 48
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 506,
+                "endLine": 506,
+                "startOffset": 41,
+                "endOffset": 48
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 507,
+                "endLine": 507,
+                "startOffset": 41,
+                "endOffset": 48
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 550,
+                "endLine": 550,
+                "startOffset": 22,
+                "endOffset": 29
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 551,
+                "endLine": 551,
+                "startOffset": 22,
+                "endOffset": 29
+              },
+              "msg": "Duplication"
+            }
+          ]
+        }
+      ],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Define a constant instead of duplicating this literal \"CP278\" 4 times.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "mturk",
+      "tags": [
+        "design"
+      ],
+      "creationDate": "2013-10-20T05:38:19+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "1cc5e2e8-c73f-4bb4-b3da-beb47994edc8",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/util/DOMWriter.java",
+      "componentId": 50976,
+      "project": "org.apache:tomcat",
+      "line": 190,
+      "textRange": {
+        "startLine": 190,
+        "endLine": 190,
+        "startOffset": 19,
+        "endOffset": 25
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 190,
+                "endLine": 190,
+                "startOffset": 19,
+                "endOffset": 25
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 191,
+                "endLine": 191,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 192,
+                "endLine": 192,
+                "startOffset": 12,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 198,
+                "endLine": 198,
+                "startOffset": 8,
+                "endOffset": 11
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 201,
+                "endLine": 201,
+                "startOffset": 16,
+                "endOffset": 20
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 204,
+                "endLine": 204,
+                "startOffset": 16,
+                "endOffset": 20
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 207,
+                "endLine": 207,
+                "startOffset": 16,
+                "endOffset": 20
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 210,
+                "endLine": 210,
+                "startOffset": 16,
+                "endOffset": 20
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 213,
+                "endLine": 213,
+                "startOffset": 16,
+                "endOffset": 20
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 214,
+                "endLine": 214,
+                "startOffset": 16,
+                "endOffset": 20
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 215,
+                "endLine": 215,
+                "startOffset": 20,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "The Cyclomatic Complexity of this method \"escape\" is 11 which is greater than 10 authorized.",
+      "effort": "11min",
+      "debt": "11min",
+      "author": "mturk",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2013-09-12T19:50:55+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "20d65e41-c38d-468f-b178-9fada9628617",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/util/DOMWriter.java",
+      "componentId": 50976,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 71,
+        "endLine": 71,
+        "startOffset": 27,
+        "endOffset": 35
+      },
+      "flows": [],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Rename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "mturk",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2014-01-12T01:52:46+0100",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "21221aff-ab92-4e6c-a229-44773ab26f84",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/realm/DigestCredentialHandlerBase.java",
+      "componentId": 713507,
+      "project": "org.apache:tomcat",
+      "line": 170,
+      "textRange": {
+        "startLine": 170,
+        "endLine": 170,
+        "startOffset": 12,
+        "endOffset": 22
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename \"iterations\" which hides the field declared at line 38.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "pitfall"
+      ],
+      "creationDate": "2014-09-28T19:07:29+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "244ccc7c-3c68-4b4b-8e3c-9680cd38238a",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/util/MIME2Java.java",
+      "componentId": 50986,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 501,
+        "endLine": 501,
+        "startOffset": 41,
+        "endOffset": 48
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 501,
+                "endLine": 501,
+                "startOffset": 41,
+                "endOffset": 48
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 502,
+                "endLine": 502,
+                "startOffset": 41,
+                "endOffset": 48
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 503,
+                "endLine": 503,
+                "startOffset": 41,
+                "endOffset": 48
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 545,
+                "endLine": 545,
+                "startOffset": 22,
+                "endOffset": 29
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 546,
+                "endLine": 546,
+                "startOffset": 22,
+                "endOffset": 29
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 547,
+                "endLine": 547,
+                "startOffset": 22,
+                "endOffset": 29
+              },
+              "msg": "Duplication"
+            }
+          ]
+        }
+      ],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Define a constant instead of duplicating this literal \"CP037\" 6 times.",
+      "effort": "14min",
+      "debt": "14min",
+      "author": "mturk",
+      "tags": [
+        "design"
+      ],
+      "creationDate": "2013-10-20T05:38:19+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "2aefa4a9-cc45-4276-8fe2-5697e5ec03ec",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/util/MIME2Java.java",
+      "componentId": 50986,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 495,
+        "endLine": 495,
+        "startOffset": 22,
+        "endOffset": 30
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 495,
+                "endLine": 495,
+                "startOffset": 22,
+                "endOffset": 30
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 495,
+                "endLine": 495,
+                "startOffset": 41,
+                "endOffset": 49
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 539,
+                "endLine": 539,
+                "startOffset": 22,
+                "endOffset": 30
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 539,
+                "endLine": 539,
+                "startOffset": 32,
+                "endOffset": 40
+              },
+              "msg": "Duplication"
+            }
+          ]
+        }
+      ],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Define a constant instead of duplicating this literal \"GB2312\" 4 times.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "mturk",
+      "tags": [
+        "design"
+      ],
+      "creationDate": "2013-10-20T05:38:19+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "2bc4be34-3885-4091-98a0-4ba681aedddc",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/util/DOMWriter.java",
+      "componentId": 50976,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 74,
+        "endLine": 74,
+        "startOffset": 55,
+        "endOffset": 64
+      },
+      "flows": [],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Move the \"Unicode\" string literal on the left side of this string comparison.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "mturk",
+      "tags": [
+        "bad-practice"
+      ],
+      "creationDate": "2013-10-20T05:38:19+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "3dd57f14-9f50-435c-a6e9-6c6e817aa655",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/util/DOMWriter.java",
+      "componentId": 50976,
+      "project": "org.apache:tomcat",
+      "line": 48,
+      "textRange": {
+        "startLine": 48,
+        "endLine": 48,
+        "startOffset": 16,
+        "endOffset": 21
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 48,
+                "endLine": 48,
+                "startOffset": 16,
+                "endOffset": 21
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 51,
+                "endLine": 51,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 52,
+                "endLine": 52,
+                "startOffset": 12,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 58,
+                "endLine": 58,
+                "startOffset": 12,
+                "endOffset": 16
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 59,
+                "endLine": 59,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 67,
+                "endLine": 67,
+                "startOffset": 12,
+                "endOffset": 16
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 71,
+                "endLine": 71,
+                "startOffset": 16,
+                "endOffset": 19
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 85,
+                "endLine": 85,
+                "startOffset": 12,
+                "endOffset": 16
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 86,
+                "endLine": 86,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 96,
+                "endLine": 96,
+                "startOffset": 12,
+                "endOffset": 16
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 97,
+                "endLine": 97,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 107,
+                "endLine": 107,
+                "startOffset": 12,
+                "endOffset": 16
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 112,
+                "endLine": 112,
+                "startOffset": 12,
+                "endOffset": 16
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 117,
+                "endLine": 117,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 117,
+                "endLine": 117,
+                "startOffset": 33,
+                "endOffset": 35
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 125,
+                "endLine": 125,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "The Cyclomatic Complexity of this method \"print\" is 16 which is greater than 10 authorized.",
+      "effort": "16min",
+      "debt": "16min",
+      "author": "mturk",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2013-09-12T19:50:55+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "4c62efc9-748a-4e1e-8772-e635f8d3373f",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/util/MIME2Java.java",
+      "componentId": 50986,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 482,
+        "endLine": 482,
+        "startOffset": 41,
+        "endOffset": 49
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 482,
+                "endLine": 482,
+                "startOffset": 41,
+                "endOffset": 49
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 483,
+                "endLine": 483,
+                "startOffset": 41,
+                "endOffset": 49
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 527,
+                "endLine": 527,
+                "startOffset": 22,
+                "endOffset": 30
+              },
+              "msg": "Duplication"
+            }
+          ]
+        }
+      ],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Define a constant instead of duplicating this literal \"8859_1\" 3 times.",
+      "effort": "8min",
+      "debt": "8min",
+      "author": "mturk",
+      "tags": [
+        "design"
+      ],
+      "creationDate": "2013-10-20T05:38:19+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "4cbc13fe-d53f-4b90-b03f-7f0bf364a409",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/realm/DigestCredentialHandlerBase.java",
+      "componentId": 713507,
+      "project": "org.apache:tomcat",
+      "line": 108,
+      "textRange": {
+        "startLine": 108,
+        "endLine": 108,
+        "startOffset": 12,
+        "endOffset": 22
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename \"iterations\" which hides the field declared at line 38.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "pitfall"
+      ],
+      "creationDate": "2014-09-28T19:07:29+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "57aa4985-9599-4cdd-abff-d9c0aafd3e27",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/coyote/http2/Stream.java",
+      "componentId": 852251,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 204,
+        "endLine": 204,
+        "startOffset": 16,
+        "endOffset": 26
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 204,
+                "endLine": 204,
+                "startOffset": 16,
+                "endOffset": 26
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 205,
+                "endLine": 205,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 211,
+                "endLine": 211,
+                "startOffset": 8,
+                "endOffset": 12
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 215,
+                "endLine": 215,
+                "startOffset": 8,
+                "endOffset": 12
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 219,
+                "endLine": 219,
+                "startOffset": 8,
+                "endOffset": 12
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 221,
+                "endLine": 221,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 233,
+                "endLine": 233,
+                "startOffset": 8,
+                "endOffset": 12
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 235,
+                "endLine": 235,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 241,
+                "endLine": 241,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 250,
+                "endLine": 250,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 250,
+                "endLine": 250,
+                "startOffset": 38,
+                "endOffset": 40
+              },
+              "msg": "+1"
+            }
+          ]
+        }
+      ],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "The Cyclomatic Complexity of this method \"emitHeader\" is 11 which is greater than 10 authorized.",
+      "effort": "11min",
+      "debt": "11min",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2015-10-01T17:05:59+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "6dc10514-3a32-41a5-bc6b-91288f993551",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/coyote/http2/Stream.java",
+      "componentId": 852251,
+      "project": "org.apache:tomcat",
+      "line": 233,
+      "textRange": {
+        "startLine": 233,
+        "endLine": 233,
+        "startOffset": 8,
+        "endOffset": 26
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Reduce this switch case number of lines from 10 to at most 5, for example by extracting code into methods.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2015-05-20T17:08:19+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "78ba9e1f-52f6-4ed3-812d-50a131077df0",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/naming/Constants.java",
+      "componentId": 51512,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 34,
+        "endLine": 34,
+        "startOffset": 8,
+        "endOffset": 9
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 34,
+                "endLine": 34,
+                "startOffset": 44,
+                "endOffset": 45
+              },
+              "msg": "Original"
+            }
+          ]
+        }
+      ],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Remove those useless parentheses.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "remm",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2014-07-07T13:56:20+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "871353f0-f561-4119-a6f1-0f361c5bb08a",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/util/MIME2Java.java",
+      "componentId": 50986,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 515,
+        "endLine": 515,
+        "startOffset": 41,
+        "endOffset": 48
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 515,
+                "endLine": 515,
+                "startOffset": 41,
+                "endOffset": 48
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 516,
+                "endLine": 516,
+                "startOffset": 41,
+                "endOffset": 48
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 559,
+                "endLine": 559,
+                "startOffset": 22,
+                "endOffset": 29
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 560,
+                "endLine": 560,
+                "startOffset": 22,
+                "endOffset": 29
+              },
+              "msg": "Duplication"
+            }
+          ]
+        }
+      ],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Define a constant instead of duplicating this literal \"CP870\" 4 times.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "mturk",
+      "tags": [
+        "design"
+      ],
+      "creationDate": "2013-10-20T05:38:19+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "8d0cc357-10d8-4a4d-9a4a-4bd56fdc621a",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/ha/session/DeltaManager.java",
+      "componentId": 50756,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 74,
+        "endLine": 74,
+        "startOffset": 34,
+        "endOffset": 45
+      },
+      "flows": [],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "markt",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2014-07-07T13:56:20+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "96c333ef-9617-4526-b2ae-0173dace0a5c",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/util/DOMWriter.java",
+      "componentId": 50976,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 72,
+        "endLine": 72,
+        "startOffset": 50,
+        "endOffset": 59
+      },
+      "flows": [],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Move the \"DEFAULT\" string literal on the left side of this string comparison.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "mturk",
+      "tags": [
+        "bad-practice"
+      ],
+      "creationDate": "2013-10-20T05:38:19+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVJ5jQFhXm-kE8PMwXO0",
+      "rule": "squid:S1659",
+      "severity": "INFO",
+      "component": "org.apache:tomcat:java/org/apache/catalina/loader/WebappClassLoaderBase.java",
+      "componentId": 709927,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 2449,
+        "endLine": 2449,
+        "startOffset": 22,
+        "endOffset": 28
+      },
+      "flows": [],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Do not forget to remove this deprecated code someday.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "rjung",
+      "tags": [
+        "obsolete"
+      ],
+      "creationDate": "2016-01-25T17:06:34+0100",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVQ4b9f5GM2yK8eiewH8",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/el/parser/ELParser.html",
+      "componentId": 601834,
+      "project": "org.apache:tomcat",
+      "line": 137,
+      "textRange": {
+        "startLine": 137,
+        "endLine": 137,
+        "startOffset": 0,
+        "endOffset": 71
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this deprecated \"ALIGN\" attribute.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "remm",
+      "tags": [
+        "html5",
+        "obsolete"
+      ],
+      "creationDate": "2016-04-21T12:44:06+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVQ4b9f5GM2yK8eiewH9",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/el/parser/ELParser.html",
+      "componentId": 601834,
+      "project": "org.apache:tomcat",
+      "line": 137,
+      "textRange": {
+        "startLine": 137,
+        "endLine": 137,
+        "startOffset": 0,
+        "endOffset": 71
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this deprecated \"NAME\" attribute.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "remm",
+      "tags": [
+        "html5",
+        "obsolete"
+      ],
+      "creationDate": "2016-04-21T12:44:06+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVQ4b9f6GM2yK8eiewH-",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/el/parser/ELParser.html",
+      "componentId": 601834,
+      "project": "org.apache:tomcat",
+      "line": 137,
+      "textRange": {
+        "startLine": 137,
+        "endLine": 137,
+        "startOffset": 0,
+        "endOffset": 71
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this deprecated \"VALIGN\" attribute.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "remm",
+      "tags": [
+        "html5",
+        "obsolete"
+      ],
+      "creationDate": "2016-04-21T12:44:06+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVRcfDkNGmESyfsTO4-r",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/connector/CoyoteAdapter.java",
+      "componentId": 50681,
+      "project": "org.apache:tomcat",
+      "flows": [],
+      "status": "OPEN",
+      "message": "This file has 1,323 lines, which is greater than 1,000 authorized. Split it into smaller files.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2016-04-28T12:43:58+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVRcfECBGmESyfsTO5A8",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/ha/session/DeltaManager.java",
+      "componentId": 50756,
+      "project": "org.apache:tomcat",
+      "flows": [],
+      "status": "OPEN",
+      "message": "This file has 1,454 lines, which is greater than 1,000 authorized. Split it into smaller files.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2016-04-28T12:43:58+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVRcfEGWGmESyfsTO5Bl",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/loader/WebappClassLoaderBase.java",
+      "componentId": 709927,
+      "project": "org.apache:tomcat",
+      "flows": [],
+      "status": "OPEN",
+      "message": "This file has 2,473 lines, which is greater than 1,000 authorized. Split it into smaller files.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "violetagg",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2016-04-28T12:43:58+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVRcfEXjGmESyfsTO5DU",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/servlets/DefaultServlet.java",
+      "componentId": 50826,
+      "project": "org.apache:tomcat",
+      "flows": [],
+      "status": "OPEN",
+      "message": "This file has 2,410 lines, which is greater than 1,000 authorized. Split it into smaller files.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2016-04-28T12:43:58+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVRcfFVgGmESyfsTO5ME",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/coyote/ajp/AjpProcessor.java",
+      "componentId": 51026,
+      "project": "org.apache:tomcat",
+      "flows": [],
+      "status": "OPEN",
+      "message": "This file has 1,597 lines, which is greater than 1,000 authorized. Split it into smaller files.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2016-04-28T12:43:58+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVRcfFYbGmESyfsTO5Mx",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/coyote/http11/Http11Processor.java",
+      "componentId": 51034,
+      "project": "org.apache:tomcat",
+      "flows": [],
+      "status": "OPEN",
+      "message": "This file has 1,854 lines, which is greater than 1,000 authorized. Split it into smaller files.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2016-04-28T12:43:58+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVRcfFdyGmESyfsTO5OC",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/coyote/http2/Http2UpgradeHandler.java",
+      "componentId": 838903,
+      "project": "org.apache:tomcat",
+      "flows": [],
+      "status": "OPEN",
+      "message": "This file has 1,466 lines, which is greater than 1,000 authorized. Split it into smaller files.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2016-04-28T12:43:58+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVWg6wVISARHJEIG_fpi",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/connector/CoyoteAdapter.java",
+      "componentId": 50681,
+      "project": "org.apache:tomcat",
+      "line": 560,
+      "textRange": {
+        "startLine": 560,
+        "endLine": 560,
+        "startOffset": 36,
+        "endOffset": 43
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Move the \"https\" string literal on the left side of this string comparison.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "markt",
+      "tags": [
+        "bad-practice"
+      ],
+      "creationDate": "2016-06-30T12:41:59+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVWg6xudSARHJEIG_fpj",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/naming/StringManager.java",
+      "componentId": 51223,
+      "project": "org.apache:tomcat",
+      "line": 178,
+      "textRange": {
+        "startLine": 178,
+        "endLine": 178,
+        "startOffset": 38,
+        "endOffset": 48
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Document this public method.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "markt",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2016-06-30T12:41:59+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "a4c24f6e-7b63-460b-bbd5-078eeecab9cc",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/coyote/http11/Http11Processor.java",
+      "componentId": 51034,
+      "project": "org.apache:tomcat",
+      "flows": [],
+      "status": "OPEN",
+      "message": "5 duplicated blocks of code must be removed.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "markt",
+      "tags": [],
+      "creationDate": "2015-03-15T18:09:47+0100",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "a7fbab3e-26c8-47cf-a833-934a695b7692",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/loader/WebappClassLoaderBase.java",
+      "componentId": 709927,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 323,
+        "endLine": 323,
+        "startOffset": 31,
+        "endOffset": 44
+      },
+      "flows": [],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Move this variable to comply with Java Code Conventions.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2014-09-14T19:07:39+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "abd9c37f-1958-4539-8571-aa6336656d8f",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/util/DOMWriter.java",
+      "componentId": 50976,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 51,
+        "endLine": 51,
+        "startOffset": 15,
+        "endOffset": 16
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 51,
+                "endLine": 51,
+                "startOffset": 36,
+                "endOffset": 37
+              },
+              "msg": "Original"
+            }
+          ]
+        }
+      ],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Remove those useless parentheses.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "mturk",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2014-07-07T13:56:20+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "b414296e-626e-451d-b9d2-c180fa673b8d",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/realm/Constants.java",
+      "componentId": 51585,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 30,
+        "endLine": 30,
+        "startOffset": 31,
+        "endOffset": 38
+      },
+      "flows": [],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "mturk",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2014-07-07T13:56:20+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "b733fbbe-cb00-4b2a-93e9-1dc3634e9db4",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/coyote/ajp/AjpProcessor.java",
+      "componentId": 51026,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 1306,
+        "endLine": 1306,
+        "startOffset": 50,
+        "endOffset": 57
+      },
+      "flows": [],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Move the \"https\" string literal on the left side of this string comparison.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "markt",
+      "tags": [
+        "bad-practice"
+      ],
+      "creationDate": "2014-11-30T18:05:04+0100",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "b87fcb3d-97eb-4734-96de-a042ccc97ff1",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/realm/Constants.java",
+      "componentId": 51585,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 19,
+        "endOffset": 28
+      },
+      "flows": [],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Add a private constructor to hide the implicit public one.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "mturk",
+      "tags": [
+        "design"
+      ],
+      "creationDate": "2013-10-20T05:38:19+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "c5d1b9e7-6d68-4e15-b60f-5b8bad3f9b1e",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/coyote/http11/Http11Processor.java",
+      "componentId": 51034,
+      "project": "org.apache:tomcat",
+      "line": 1635,
+      "textRange": {
+        "startLine": 1635,
+        "endLine": 1635,
+        "startOffset": 17,
+        "endOffset": 26
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1635,
+                "endLine": 1635,
+                "startOffset": 17,
+                "endOffset": 26
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1637,
+                "endLine": 1637,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1637,
+                "endLine": 1637,
+                "startOffset": 28,
+                "endOffset": 30
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1643,
+                "endLine": 1643,
+                "startOffset": 12,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1651,
+                "endLine": 1651,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1657,
+                "endLine": 1657,
+                "startOffset": 8,
+                "endOffset": 11
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1660,
+                "endLine": 1660,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1662,
+                "endLine": 1662,
+                "startOffset": 19,
+                "endOffset": 21
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1663,
+                "endLine": 1663,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1663,
+                "endLine": 1663,
+                "startOffset": 26,
+                "endOffset": 28
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1670,
+                "endLine": 1670,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1677,
+                "endLine": 1677,
+                "startOffset": 12,
+                "endOffset": 15
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1679,
+                "endLine": 1679,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1679,
+                "endLine": 1679,
+                "startOffset": 36,
+                "endOffset": 38
+              },
+              "msg": "+1"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "The Cyclomatic Complexity of this method \"parseHost\" is 14 which is greater than 10 authorized.",
+      "effort": "14min",
+      "debt": "14min",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2015-03-15T18:09:47+0100",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "cc3ff781-678d-4bd0-a7f4-798ca7170a1a",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/naming/Constants.java",
+      "componentId": 51512,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 26,
+        "endLine": 26,
+        "startOffset": 19,
+        "endOffset": 28
+      },
+      "flows": [],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Add a private constructor to hide the implicit public one.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "mturk",
+      "tags": [
+        "design"
+      ],
+      "creationDate": "2013-10-20T05:38:19+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "dae11623-b08a-4b01-af82-1c3ad8a7d9b7",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/connector/CoyoteAdapter.java",
+      "componentId": 50681,
+      "project": "org.apache:tomcat",
+      "line": 536,
+      "textRange": {
+        "startLine": 536,
+        "endLine": 536,
+        "startOffset": 22,
+        "endOffset": 38
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 536,
+                "endLine": 536,
+                "startOffset": 22,
+                "endOffset": 38
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 542,
+                "endLine": 542,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 556,
+                "endLine": 556,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 558,
+                "endLine": 558,
+                "startOffset": 15,
+                "endOffset": 17
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 560,
+                "endLine": 560,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 566,
+                "endLine": 566,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 573,
+                "endLine": 573,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 574,
+                "endLine": 574,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 578,
+                "endLine": 578,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 590,
+                "endLine": 590,
+                "startOffset": 12,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 595,
+                "endLine": 595,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 608,
+                "endLine": 608,
+                "startOffset": 14,
+                "endOffset": 19
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 613,
+                "endLine": 613,
+                "startOffset": 16,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 616,
+                "endLine": 616,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 621,
+                "endLine": 621,
+                "startOffset": 16,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 626,
+                "endLine": 626,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 631,
+                "endLine": 631,
+                "startOffset": 16,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 646,
+                "endLine": 646,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 654,
+                "endLine": 654,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 656,
+                "endLine": 656,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 670,
+                "endLine": 670,
+                "startOffset": 8,
+                "endOffset": 13
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 677,
+                "endLine": 677,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 683,
+                "endLine": 683,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 686,
+                "endLine": 686,
+                "startOffset": 16,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 693,
+                "endLine": 693,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 700,
+                "endLine": 700,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 713,
+                "endLine": 713,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 713,
+                "endLine": 713,
+                "startOffset": 32,
+                "endOffset": 34
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 722,
+                "endLine": 722,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 722,
+                "endLine": 722,
+                "startOffset": 37,
+                "endOffset": 39
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 724,
+                "endLine": 724,
+                "startOffset": 20,
+                "endOffset": 23
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 726,
+                "endLine": 726,
+                "startOffset": 24,
+                "endOffset": 26
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 729,
+                "endLine": 729,
+                "startOffset": 28,
+                "endOffset": 30
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 749,
+                "endLine": 749,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 749,
+                "endLine": 749,
+                "startOffset": 29,
+                "endOffset": 31
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 755,
+                "endLine": 755,
+                "startOffset": 18,
+                "endOffset": 23
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 766,
+                "endLine": 766,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 769,
+                "endLine": 769,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 777,
+                "endLine": 777,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 784,
+                "endLine": 784,
+                "startOffset": 12,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 788,
+                "endLine": 788,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 789,
+                "endLine": 789,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 792,
+                "endLine": 792,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 794,
+                "endLine": 794,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 795,
+                "endLine": 795,
+                "startOffset": 20,
+                "endOffset": 23
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 796,
+                "endLine": 796,
+                "startOffset": 24,
+                "endOffset": 26
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 799,
+                "endLine": 799,
+                "startOffset": 24,
+                "endOffset": 26
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 811,
+                "endLine": 811,
+                "startOffset": 12,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "The Cyclomatic Complexity of this method \"postParseRequest\" is 48 which is greater than 10 authorized.",
+      "effort": "48min",
+      "debt": "48min",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2013-09-12T19:50:55+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "db08b720-9232-470b-9bf1-869e20a6b629",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/coyote/ajp/AjpProcessor.java",
+      "componentId": 51026,
+      "project": "org.apache:tomcat",
+      "line": 1267,
+      "textRange": {
+        "startLine": 1267,
+        "endLine": 1267,
+        "startOffset": 17,
+        "endOffset": 26
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1267,
+                "endLine": 1267,
+                "startOffset": 17,
+                "endOffset": 26
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1269,
+                "endLine": 1269,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1269,
+                "endLine": 1269,
+                "startOffset": 28,
+                "endOffset": 30
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1274,
+                "endLine": 1274,
+                "startOffset": 14,
+                "endOffset": 19
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1278,
+                "endLine": 1278,
+                "startOffset": 12,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1286,
+                "endLine": 1286,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1292,
+                "endLine": 1292,
+                "startOffset": 8,
+                "endOffset": 11
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1295,
+                "endLine": 1295,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1297,
+                "endLine": 1297,
+                "startOffset": 19,
+                "endOffset": 21
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1298,
+                "endLine": 1298,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1298,
+                "endLine": 1298,
+                "startOffset": 26,
+                "endOffset": 28
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1305,
+                "endLine": 1305,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1313,
+                "endLine": 1313,
+                "startOffset": 12,
+                "endOffset": 15
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 1315,
+                "endLine": 1315,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "The Cyclomatic Complexity of this method \"parseHost\" is 14 which is greater than 10 authorized.",
+      "effort": "14min",
+      "debt": "14min",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2015-03-15T18:09:47+0100",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "deccd7ce-6eaa-4516-8234-012c81b2fead",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/util/MIME2Java.java",
+      "componentId": 50986,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 504,
+        "endLine": 504,
+        "startOffset": 41,
+        "endOffset": 48
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 504,
+                "endLine": 504,
+                "startOffset": 41,
+                "endOffset": 48
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 505,
+                "endLine": 505,
+                "startOffset": 41,
+                "endOffset": 48
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 548,
+                "endLine": 548,
+                "startOffset": 22,
+                "endOffset": 29
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 549,
+                "endLine": 549,
+                "startOffset": 22,
+                "endOffset": 29
+              },
+              "msg": "Duplication"
+            }
+          ]
+        }
+      ],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Define a constant instead of duplicating this literal \"CP277\" 4 times.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "mturk",
+      "tags": [
+        "design"
+      ],
+      "creationDate": "2013-10-20T05:38:19+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "e082bce5-9ed5-442b-b231-4d45242bc56a",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/naming/Constants.java",
+      "componentId": 51512,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 31,
+        "endOffset": 38
+      },
+      "flows": [],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "mturk",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2014-07-07T13:56:20+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "closeDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "e5ced237-9b71-45d1-a44a-edf04bd8bc04",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/loader/WebappClassLoaderBase.java",
+      "componentId": 709927,
+      "project": "org.apache:tomcat",
+      "line": 2118,
+      "textRange": {
+        "startLine": 2118,
+        "endLine": 2118,
+        "startOffset": 23,
+        "endOffset": 40
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2118,
+                "endLine": 2118,
+                "startOffset": 23,
+                "endOffset": 40
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2122,
+                "endLine": 2122,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2123,
+                "endLine": 2123,
+                "startOffset": 12,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2130,
+                "endLine": 2130,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2133,
+                "endLine": 2133,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2134,
+                "endLine": 2134,
+                "startOffset": 16,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2146,
+                "endLine": 2146,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2155,
+                "endLine": 2155,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2156,
+                "endLine": 2156,
+                "startOffset": 12,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2160,
+                "endLine": 2160,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2161,
+                "endLine": 2161,
+                "startOffset": 16,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2163,
+                "endLine": 2163,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2167,
+                "endLine": 2167,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2168,
+                "endLine": 2168,
+                "startOffset": 16,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2176,
+                "endLine": 2176,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2179,
+                "endLine": 2179,
+                "startOffset": 68,
+                "endOffset": 69
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2183,
+                "endLine": 2183,
+                "startOffset": 16,
+                "endOffset": 19
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2187,
+                "endLine": 2187,
+                "startOffset": 24,
+                "endOffset": 26
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2190,
+                "endLine": 2190,
+                "startOffset": 22,
+                "endOffset": 27
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2192,
+                "endLine": 2192,
+                "startOffset": 24,
+                "endOffset": 30
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2200,
+                "endLine": 2200,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2205,
+                "endLine": 2205,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2208,
+                "endLine": 2208,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2210,
+                "endLine": 2210,
+                "startOffset": 24,
+                "endOffset": 26
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2215,
+                "endLine": 2215,
+                "startOffset": 22,
+                "endOffset": 27
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2222,
+                "endLine": 2222,
+                "startOffset": 12,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2225,
+                "endLine": 2225,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2227,
+                "endLine": 2227,
+                "startOffset": 20,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2230,
+                "endLine": 2230,
+                "startOffset": 55,
+                "endOffset": 57
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2232,
+                "endLine": 2232,
+                "startOffset": 20,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2233,
+                "endLine": 2233,
+                "startOffset": 24,
+                "endOffset": 29
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2243,
+                "endLine": 2243,
+                "startOffset": 14,
+                "endOffset": 19
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "textRange": {
+                "startLine": 2244,
+                "endLine": 2244,
+                "startOffset": 16,
+                "endOffset": 21
+              },
+              "msg": "+1"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "The Cyclomatic Complexity of this method \"findClassInternal\" is 33 which is greater than 10 authorized.",
+      "effort": "33min",
+      "debt": "33min",
+      "author": "markt",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2014-09-14T19:07:39+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "f39a12c6-a3b6-45a3-b551-03e4a21da167",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/coyote/ajp/AjpProcessor.java",
+      "componentId": 51026,
+      "project": "org.apache:tomcat",
+      "flows": [],
+      "status": "OPEN",
+      "message": "5 duplicated blocks of code must be removed.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "markt",
+      "tags": [],
+      "creationDate": "2014-11-30T18:05:04+0100",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "fde5ac82-ed8d-4f65-ae0f-1ec7c43fe441",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/catalina/realm/DigestCredentialHandlerBase.java",
+      "componentId": 713507,
+      "project": "org.apache:tomcat",
+      "line": 109,
+      "textRange": {
+        "startLine": 109,
+        "endLine": 109,
+        "startOffset": 12,
+        "endOffset": 22
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename \"saltLength\" which hides the field declared at line 39.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "pitfall"
+      ],
+      "creationDate": "2014-09-28T19:07:29+0200",
+      "updateDate": "2016-06-30T12:41:59+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "0ecb2509-f720-44db-874f-0c94c6eeec12",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/coyote/http11/AbstractHttp11Protocol.java",
+      "componentId": 399183,
+      "project": "org.apache:tomcat",
+      "textRange": {
+        "startLine": 325,
+        "endLine": 325,
+        "startOffset": 16,
+        "endOffset": 22
+      },
+      "flows": [],
+      "resolution": "FIXED",
+      "status": "CLOSED",
+      "message": "Rename \"secure\" which hides the field declared at line 241.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "pitfall"
+      ],
+      "creationDate": "2015-05-29T17:06:13+0200",
+      "updateDate": "2016-06-29T12:42:02+0200",
+      "closeDate": "2016-06-29T12:42:02+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "9920d4ed-0ec5-425f-9f32-2d50c5effe58",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/tomcat/dbcp/pool2/PoolUtils.java",
+      "componentId": 657813,
+      "project": "org.apache:tomcat",
+      "line": 1594,
+      "textRange": {
+        "startLine": 1594,
+        "endLine": 1594,
+        "startOffset": 16,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove the declaration of thrown exception 'java.util.NoSuchElementException' which is a subclass of 'java.lang.Exception'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "error-handling"
+      ],
+      "creationDate": "2015-10-08T17:06:20+0200",
+      "updateDate": "2016-06-28T12:42:08+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVQ4b9f_GM2yK8eiewId",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/el/parser/ELParser.html",
+      "componentId": 601834,
+      "project": "org.apache:tomcat",
+      "line": 162,
+      "textRange": {
+        "startLine": 162,
+        "endLine": 162,
+        "startOffset": 0,
+        "endOffset": 66
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this deprecated \"VALIGN\" attribute.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "remm",
+      "tags": [
+        "html5",
+        "obsolete"
+      ],
+      "creationDate": "2016-04-21T12:44:06+0200",
+      "updateDate": "2016-06-28T12:42:08+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVQ4b9f_GM2yK8eiewIf",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/el/parser/ELParser.html",
+      "componentId": 601834,
+      "project": "org.apache:tomcat",
+      "line": 162,
+      "textRange": {
+        "startLine": 162,
+        "endLine": 162,
+        "startOffset": 0,
+        "endOffset": 66
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this deprecated \"ALIGN\" attribute.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "remm",
+      "tags": [
+        "html5",
+        "obsolete"
+      ],
+      "creationDate": "2016-04-21T12:44:06+0200",
+      "updateDate": "2016-06-28T12:42:08+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "b934eb87-e5ed-457d-8df0-e786f309a9d4",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/tomcat/dbcp/pool2/PoolUtils.java",
+      "componentId": 657813,
+      "project": "org.apache:tomcat",
+      "line": 1594,
+      "textRange": {
+        "startLine": 1594,
+        "endLine": 1594,
+        "startOffset": 40,
+        "endOffset": 61
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove the declaration of thrown exception 'java.lang.IllegalStateException' which is a subclass of 'java.lang.Exception'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "error-handling"
+      ],
+      "creationDate": "2015-10-08T17:06:20+0200",
+      "updateDate": "2016-06-28T12:42:08+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVQ4b9fnGM2yK8eiewGK",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/el/parser/ELParser.html",
+      "componentId": 601834,
+      "project": "org.apache:tomcat",
+      "line": 52,
+      "textRange": {
+        "startLine": 52,
+        "endLine": 52,
+        "startOffset": 0,
+        "endOffset": 63
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this deprecated \"ALIGN\" attribute.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "remm",
+      "tags": [
+        "html5",
+        "obsolete"
+      ],
+      "creationDate": "2016-04-21T12:44:06+0200",
+      "updateDate": "2016-06-27T12:42:15+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVQ4b9fnGM2yK8eiewGL",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/el/parser/ELParser.html",
+      "componentId": 601834,
+      "project": "org.apache:tomcat",
+      "line": 52,
+      "textRange": {
+        "startLine": 52,
+        "endLine": 52,
+        "startOffset": 0,
+        "endOffset": 63
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this deprecated \"VALIGN\" attribute.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "remm",
+      "tags": [
+        "html5",
+        "obsolete"
+      ],
+      "creationDate": "2016-04-21T12:44:06+0200",
+      "updateDate": "2016-06-27T12:42:15+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVQ4b9fnGM2yK8eiewGM",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/el/parser/ELParser.html",
+      "componentId": 601834,
+      "project": "org.apache:tomcat",
+      "line": 52,
+      "textRange": {
+        "startLine": 52,
+        "endLine": 52,
+        "startOffset": 0,
+        "endOffset": 63
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this deprecated \"NAME\" attribute.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "remm",
+      "tags": [
+        "html5",
+        "obsolete"
+      ],
+      "creationDate": "2016-04-21T12:44:06+0200",
+      "updateDate": "2016-06-27T12:42:15+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVQ4b9f_GM2yK8eiewIe",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/el/parser/ELParser.html",
+      "componentId": 601834,
+      "project": "org.apache:tomcat",
+      "line": 162,
+      "textRange": {
+        "startLine": 162,
+        "endLine": 162,
+        "startOffset": 0,
+        "endOffset": 66
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this deprecated \"NAME\" attribute.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "remm",
+      "tags": [
+        "html5",
+        "obsolete"
+      ],
+      "creationDate": "2016-04-21T12:44:06+0200",
+      "updateDate": "2016-06-26T12:42:02+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "11f2c604-6fb8-4ea5-83ed-f5d39f6846cc",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/jasper/el/JspValueExpression.java",
+      "componentId": 51130,
+      "project": "org.apache:tomcat",
+      "line": 92,
+      "textRange": {
+        "startLine": 92,
+        "endLine": 92,
+        "startOffset": 41,
+        "endOffset": 66
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove the redundant '!unknownSymbol!' thrown exception declaration(s).",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "mturk",
+      "tags": [
+        "error-handling"
+      ],
+      "creationDate": "2015-10-08T17:06:20+0200",
+      "updateDate": "2016-06-25T12:42:51+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "3596a289-d06d-46fb-81b9-ffca49991b40",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/tomcat/dbcp/pool2/PoolUtils.java",
+      "componentId": 657813,
+      "project": "org.apache:tomcat",
+      "line": 926,
+      "textRange": {
+        "startLine": 926,
+        "endLine": 926,
+        "startOffset": 40,
+        "endOffset": 61
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove the declaration of thrown exception 'java.lang.IllegalStateException' which is a subclass of 'java.lang.Exception'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "markt",
+      "tags": [
+        "error-handling"
+      ],
+      "creationDate": "2015-10-08T17:06:20+0200",
+      "updateDate": "2016-06-25T12:42:51+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "495e1bc3-85ea-46fc-a167-4c9992865cc0",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/jasper/el/JspMethodExpression.java",
+      "componentId": 51129,
+      "project": "org.apache:tomcat",
+      "line": 70,
+      "textRange": {
+        "startLine": 70,
+        "endLine": 70,
+        "startOffset": 41,
+        "endOffset": 66
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove the redundant '!unknownSymbol!' thrown exception declaration(s).",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "mturk",
+      "tags": [
+        "error-handling"
+      ],
+      "creationDate": "2015-10-08T17:06:20+0200",
+      "updateDate": "2016-06-25T12:42:51+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "87df1fea-5b57-4b72-8d08-a3af944ad8e6",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/jasper/el/JspMethodExpression.java",
+      "componentId": 51129,
+      "project": "org.apache:tomcat",
+      "line": 70,
+      "textRange": {
+        "startLine": 70,
+        "endLine": 70,
+        "startOffset": 19,
+        "endOffset": 39
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove the declaration of thrown exception 'java.lang.NullPointerException' which is a runtime exception.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "mturk",
+      "tags": [
+        "error-handling"
+      ],
+      "creationDate": "2015-10-08T17:06:20+0200",
+      "updateDate": "2016-06-25T12:42:51+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "9ddd74eb-6ac1-43f0-9d10-46d6a981d268",
+      "rule": "squid:S1659",
+      "severity": "MINOR",
+      "component": "org.apache:tomcat:java/org/apache/jasper/el/JspMethodExpression.java",
+      "componentId": 51129,
+      "project": "org.apache:tomcat",
+      "line": 49,
+      "textRange": {
+        "startLine": 49,
+        "endLine": 49,
+        "startOffset": 41,
+        "endOffset": 66
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove the redundant '!unknownSymbol!' thrown exception declaration(s).",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "mturk",
+      "tags": [
+        "error-handling"
+      ],
+      "creationDate": "2015-10-08T17:06:20+0200",
+      "updateDate": "2016-06-25T12:42:51+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVQ4b9fqGM2yK8eiewGf",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/el/parser/ELParser.html",
+      "componentId": 601834,
+      "project": "org.apache:tomcat",
+      "line": 67,
+      "textRange": {
+        "startLine": 67,
+        "endLine": 67,
+        "startOffset": 0,
+        "endOffset": 65
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this deprecated \"NAME\" attribute.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "remm",
+      "tags": [
+        "html5",
+        "obsolete"
+      ],
+      "creationDate": "2016-04-21T12:44:06+0200",
+      "updateDate": "2016-06-25T12:42:51+0200",
+      "type": "CODE_SMELL"
+    },
+    {
+      "key": "AVQ4b9fqGM2yK8eiewGg",
+      "rule": "squid:S1659",
+      "severity": "MAJOR",
+      "component": "org.apache:tomcat:java/org/apache/el/parser/ELParser.html",
+      "componentId": 601834,
+      "project": "org.apache:tomcat",
+      "line": 67,
+      "textRange": {
+        "startLine": 67,
+        "endLine": 67,
+        "startOffset": 0,
+        "endOffset": 65
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this deprecated \"VALIGN\" attribute.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "remm",
+      "tags": [
+        "html5",
+        "obsolete"
+      ],
+      "creationDate": "2016-04-21T12:44:06+0200",
+      "updateDate": "2016-06-25T12:42:51+0200",
+      "type": "CODE_SMELL"
+    }
+  ],
+  "components": [
+    {
+      "id": 50826,
+      "key": "org.apache:tomcat:java/org/apache/catalina/servlets/DefaultServlet.java",
+      "uuid": "eab0e460-ab2c-4a4d-85ce-2c260b8397ee",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "DefaultServlet.java",
+      "longName": "java/org/apache/catalina/servlets/DefaultServlet.java",
+      "path": "java/org/apache/catalina/servlets/DefaultServlet.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 51129,
+      "key": "org.apache:tomcat:java/org/apache/jasper/el/JspMethodExpression.java",
+      "uuid": "9b51489c-1d3f-4cf9-8757-05fffa100216",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "JspMethodExpression.java",
+      "longName": "java/org/apache/jasper/el/JspMethodExpression.java",
+      "path": "java/org/apache/jasper/el/JspMethodExpression.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 423348,
+      "key": "org.apache:tomcat:java/org/apache/catalina/mapper/Mapper.java",
+      "uuid": "9130f5db-5089-4826-9cdb-d5956493959c",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "Mapper.java",
+      "longName": "java/org/apache/catalina/mapper/Mapper.java",
+      "path": "java/org/apache/catalina/mapper/Mapper.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 51148,
+      "key": "org.apache:tomcat:java/org/apache/jasper/servlet/JspServletWrapper.java",
+      "uuid": "c7a9362e-b2e5-4cad-9e34-3bd018a0ee9e",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "JspServletWrapper.java",
+      "longName": "java/org/apache/jasper/servlet/JspServletWrapper.java",
+      "path": "java/org/apache/jasper/servlet/JspServletWrapper.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 51026,
+      "key": "org.apache:tomcat:java/org/apache/coyote/ajp/AjpProcessor.java",
+      "uuid": "434651ae-4792-4598-a3fe-1ac4520e9988",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "AjpProcessor.java",
+      "longName": "java/org/apache/coyote/ajp/AjpProcessor.java",
+      "path": "java/org/apache/coyote/ajp/AjpProcessor.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 51034,
+      "key": "org.apache:tomcat:java/org/apache/coyote/http11/Http11Processor.java",
+      "uuid": "2bfe5690-2884-4bd1-91f2-490b56ddb116",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "Http11Processor.java",
+      "longName": "java/org/apache/coyote/http11/Http11Processor.java",
+      "path": "java/org/apache/coyote/http11/Http11Processor.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 50717,
+      "key": "org.apache:tomcat:java/org/apache/catalina/core/StandardWrapper.java",
+      "uuid": "723adcd3-149a-4e02-9542-6a9112fee543",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "StandardWrapper.java",
+      "longName": "java/org/apache/catalina/core/StandardWrapper.java",
+      "path": "java/org/apache/catalina/core/StandardWrapper.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 838903,
+      "key": "org.apache:tomcat:java/org/apache/coyote/http2/Http2UpgradeHandler.java",
+      "uuid": "ad394e7f-68bc-4709-b22b-4849b16ac169",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "Http2UpgradeHandler.java",
+      "longName": "java/org/apache/coyote/http2/Http2UpgradeHandler.java",
+      "path": "java/org/apache/coyote/http2/Http2UpgradeHandler.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 51512,
+      "key": "org.apache:tomcat:java/org/apache/naming/Constants.java",
+      "uuid": "fa93e02a-16d4-4c05-be9d-4c63c64a58c6",
+      "enabled": false,
+      "qualifier": "FIL",
+      "name": "Constants.java",
+      "longName": "java/org/apache/naming/Constants.java",
+      "path": "java/org/apache/naming/Constants.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 51585,
+      "key": "org.apache:tomcat:java/org/apache/catalina/realm/Constants.java",
+      "uuid": "08fb8d60-b283-4c79-bb65-32e3f2840e49",
+      "enabled": false,
+      "qualifier": "FIL",
+      "name": "Constants.java",
+      "longName": "java/org/apache/catalina/realm/Constants.java",
+      "path": "java/org/apache/catalina/realm/Constants.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 51267,
+      "key": "org.apache:tomcat:java/org/apache/tomcat/util/IntrospectionUtils.java",
+      "uuid": "ca975639-e0ea-460e-b924-ce1aa8fa0e12",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "IntrospectionUtils.java",
+      "longName": "java/org/apache/tomcat/util/IntrospectionUtils.java",
+      "path": "java/org/apache/tomcat/util/IntrospectionUtils.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 50976,
+      "key": "org.apache:tomcat:java/org/apache/catalina/util/DOMWriter.java",
+      "uuid": "ed08befe-8967-41c3-a76f-67c562967acd",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "DOMWriter.java",
+      "longName": "java/org/apache/catalina/util/DOMWriter.java",
+      "path": "java/org/apache/catalina/util/DOMWriter.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 51141,
+      "key": "org.apache:tomcat:java/org/apache/jasper/runtime/TagHandlerPool.java",
+      "uuid": "7f4decab-49fd-4a2e-9205-843190d49a94",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "TagHandlerPool.java",
+      "longName": "java/org/apache/jasper/runtime/TagHandlerPool.java",
+      "path": "java/org/apache/jasper/runtime/TagHandlerPool.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 445009,
+      "key": "org.apache:tomcat:java/org/apache/tomcat/websocket/WsSession.java",
+      "uuid": "e8e56d12-e9dd-482a-bfba-a9614f3268dd",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "WsSession.java",
+      "longName": "java/org/apache/tomcat/websocket/WsSession.java",
+      "path": "java/org/apache/tomcat/websocket/WsSession.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 50986,
+      "key": "org.apache:tomcat:java/org/apache/catalina/util/MIME2Java.java",
+      "uuid": "2e325fae-e181-4645-88f4-f8bf2c8a608f",
+      "enabled": false,
+      "qualifier": "FIL",
+      "name": "MIME2Java.java",
+      "longName": "java/org/apache/catalina/util/MIME2Java.java",
+      "path": "java/org/apache/catalina/util/MIME2Java.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 50544,
+      "key": "org.apache:tomcat",
+      "uuid": "215bfdaf-975f-4493-9018-9f73acaaa95e",
+      "enabled": true,
+      "qualifier": "TRK",
+      "name": "Apache Tomcat",
+      "longName": "Apache Tomcat"
+    },
+    {
+      "id": 601834,
+      "key": "org.apache:tomcat:java/org/apache/el/parser/ELParser.html",
+      "uuid": "3fd65d39-69a8-473c-b771-3ac768ed34f7",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "ELParser.html",
+      "longName": "java/org/apache/el/parser/ELParser.html",
+      "path": "java/org/apache/el/parser/ELParser.html",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 50681,
+      "key": "org.apache:tomcat:java/org/apache/catalina/connector/CoyoteAdapter.java",
+      "uuid": "04d839e2-21e5-4587-96d5-4416b0681fd6",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "CoyoteAdapter.java",
+      "longName": "java/org/apache/catalina/connector/CoyoteAdapter.java",
+      "path": "java/org/apache/catalina/connector/CoyoteAdapter.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 399178,
+      "key": "org.apache:tomcat:java/org/apache/coyote/AbstractProtocol.java",
+      "uuid": "ac2b4b96-79b9-4bde-a7d3-a93563778033",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "AbstractProtocol.java",
+      "longName": "java/org/apache/coyote/AbstractProtocol.java",
+      "path": "java/org/apache/coyote/AbstractProtocol.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 51152,
+      "key": "org.apache:tomcat:java/org/apache/jasper/tagplugins/jstl/core/ForEach.java",
+      "uuid": "05e68c5a-73ba-41ea-8942-7fef430176c6",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "ForEach.java",
+      "longName": "java/org/apache/jasper/tagplugins/jstl/core/ForEach.java",
+      "path": "java/org/apache/jasper/tagplugins/jstl/core/ForEach.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 657813,
+      "key": "org.apache:tomcat:java/org/apache/tomcat/dbcp/pool2/PoolUtils.java",
+      "uuid": "f18ea2b4-9537-42af-98be-064a4fe4917b",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "PoolUtils.java",
+      "longName": "java/org/apache/tomcat/dbcp/pool2/PoolUtils.java",
+      "path": "java/org/apache/tomcat/dbcp/pool2/PoolUtils.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 713507,
+      "key": "org.apache:tomcat:java/org/apache/catalina/realm/DigestCredentialHandlerBase.java",
+      "uuid": "4a2b4cdd-9856-450a-8882-328deb6eb500",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "DigestCredentialHandlerBase.java",
+      "longName": "java/org/apache/catalina/realm/DigestCredentialHandlerBase.java",
+      "path": "java/org/apache/catalina/realm/DigestCredentialHandlerBase.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 50689,
+      "key": "org.apache:tomcat:java/org/apache/catalina/connector/Request.java",
+      "uuid": "89cbee17-fe5a-463f-ab3f-e446859f00e3",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "Request.java",
+      "longName": "java/org/apache/catalina/connector/Request.java",
+      "path": "java/org/apache/catalina/connector/Request.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 399183,
+      "key": "org.apache:tomcat:java/org/apache/coyote/http11/AbstractHttp11Protocol.java",
+      "uuid": "20058a4c-01e7-44ea-b486-9b3f34d65c0a",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "AbstractHttp11Protocol.java",
+      "longName": "java/org/apache/coyote/http11/AbstractHttp11Protocol.java",
+      "path": "java/org/apache/coyote/http11/AbstractHttp11Protocol.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 51130,
+      "key": "org.apache:tomcat:java/org/apache/jasper/el/JspValueExpression.java",
+      "uuid": "2088b237-6be1-474e-8b08-ad741f0878e1",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "JspValueExpression.java",
+      "longName": "java/org/apache/jasper/el/JspValueExpression.java",
+      "path": "java/org/apache/jasper/el/JspValueExpression.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 50756,
+      "key": "org.apache:tomcat:java/org/apache/catalina/ha/session/DeltaManager.java",
+      "uuid": "f3fa30aa-98da-4e3f-9897-08d2739499ce",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "DeltaManager.java",
+      "longName": "java/org/apache/catalina/ha/session/DeltaManager.java",
+      "path": "java/org/apache/catalina/ha/session/DeltaManager.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 709927,
+      "key": "org.apache:tomcat:java/org/apache/catalina/loader/WebappClassLoaderBase.java",
+      "uuid": "104e5ce4-8b01-47a9-bc43-b30a116bd28a",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "WebappClassLoaderBase.java",
+      "longName": "java/org/apache/catalina/loader/WebappClassLoaderBase.java",
+      "path": "java/org/apache/catalina/loader/WebappClassLoaderBase.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 51223,
+      "key": "org.apache:tomcat:java/org/apache/naming/StringManager.java",
+      "uuid": "f64b1e59-ecad-4933-a29f-b02e3e1fa8a0",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "StringManager.java",
+      "longName": "java/org/apache/naming/StringManager.java",
+      "path": "java/org/apache/naming/StringManager.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    },
+    {
+      "id": 852251,
+      "key": "org.apache:tomcat:java/org/apache/coyote/http2/Stream.java",
+      "uuid": "61d19476-fe92-40e1-be28-82dc33b56d1f",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "Stream.java",
+      "longName": "java/org/apache/coyote/http2/Stream.java",
+      "path": "java/org/apache/coyote/http2/Stream.java",
+      "projectId": 50544,
+      "subProjectId": 50544
+    }
+  ]
+}

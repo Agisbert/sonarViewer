@@ -1,0 +1,14 @@
+{
+  "profiles": [
+    {
+      "key": "java-sonar-way-45126",
+      "name": "Sonar way",
+      "language": "java",
+      "languageName": "Java",
+      "isInherited": false,
+      "isDefault": true,
+      "activeRuleCount": 266,
+      "rulesUpdatedAt": "2016-05-18T13:47:33+0000"
+    }
+  ]
+}

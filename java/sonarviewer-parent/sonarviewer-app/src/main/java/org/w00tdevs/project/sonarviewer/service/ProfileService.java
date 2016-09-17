@@ -4,17 +4,17 @@
 *	\^/\_/\_/ |_(_|(/_\_/_> 
 *
 *	Project: sonarviewer-app
-*	Package: org.w00tdevs.project.sonarviewer.business.service
+*	Package: org.w00tdevs.project.sonarviewer.service
 *	Class: ProfileService.java
 *	Author: Alberto
-*	Last update: 22-mar-2016
+*	Last update: 13-may-2016
 */
 package org.w00tdevs.project.sonarviewer.service;
 
 import java.util.List;
 
-import org.w00tdevs.project.sonarviewer.database.entity.Profile;
-import org.w00tdevs.project.sonarviewer.database.entity.Project;
+import org.w00tdevs.project.sonarviewer.domain.SVProfile;
+import org.w00tdevs.project.sonarviewer.domain.SVProject;
 
 /**
  * The Interface ProfileService.
@@ -22,12 +22,30 @@ import org.w00tdevs.project.sonarviewer.database.entity.Project;
 public interface ProfileService {
 
 	/**
+	 * Gets the profile.
+	 *
+	 * @param profileId
+	 *            the profile id
+	 * @return the profile
+	 */
+	SVProfile getProfile(Long profileId);
+
+	/**
 	 * Import profiles from project.
 	 *
-	 * @param projectKey
-	 *            the project key
-	 * @return the long
+	 * @param svProject
+	 *            the sv project
+	 * @return the list
 	 */
-	List<Profile> importProfilesFromProject(Project project);
+	List<SVProfile> importProfilesFromProject(SVProject svProject);
+
+	/**
+	 * Gets the profiles from project.
+	 *
+	 * @param svProject
+	 *            the sv project
+	 * @return the profiles from project
+	 */
+	List<SVProfile> getProfilesFromProject(SVProject svProject);
 
 }

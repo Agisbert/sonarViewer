@@ -1,44 +1,60 @@
 /*
- *	    _  _                
- *	   / \/ \_|_ _| _     _ 
- *	\^/\_/\_/ |_(_|(/_\_/_> 
- *
- *	Project: sonarviewer-app
- *	Package: org.w00tdevs.project.sonarviewer.config
- *	Class: beansConfig.java
- *	Author: Alberto
- *	Last update: 23-mar-2016
- */
+*	    _  _                
+*	   / \/ \_|_ _| _     _ 
+*	\^/\_/\_/ |_(_|(/_\_/_> 
+*
+*	Project: sonarviewer-app
+*	Package: org.w00tdevs.project.sonarviewer.config
+*	Class: BeansConfig.java
+*	Author: Alberto
+*	Last update: 06-jul-2016
+*/
 package org.w00tdevs.project.sonarviewer.config;
 
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.List;
 
+import javax.ws.rs.Path;
+
+import org.apache.cxf.endpoint.Server;
+import org.apache.cxf.interceptor.LoggingInInterceptor;
+import org.apache.cxf.interceptor.LoggingOutInterceptor;
+import org.apache.cxf.jaxrs.JAXRSServerFactoryBean;
+import org.apache.cxf.jaxrs.spring.JaxRsConfig;
+import org.apache.cxf.transport.servlet.CXFServlet;
 import org.dozer.DozerBeanMapper;
 import org.dozer.Mapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.embedded.ServletRegistrationBean;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.io.support.ResourcePatternResolver;
-import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
-import org.springframework.web.client.RestOperations;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.context.annotation.Import;
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.w00tdevs.project.sonarviewer.config.cxf.SonarViewerExceptionMapper;
+import org.w00tdevs.project.sonarviewer.dozer.MyCustomFieldMapper;
+import org.w00tdevs.project.sonarviewer.external.sonarqube.service.SonarQubeClient;
+import org.w00tdevs.project.sonarviewer.external.sonarqube.service.impl.SonarQubeClientImpl;
+
+import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 
 /**
  * The Class beansConfig.
  */
 @Configuration
-public class beansConfig {
+@EnableScheduling
+@Import(JaxRsConfig.class)
+public class BeansConfig {
 
 	/** The Constant LOG. */
-	private static final Logger LOG = LoggerFactory.getLogger(beansConfig.class);
+	private static final Logger LOG = LoggerFactory.getLogger(BeansConfig.class);
 
-	/** The resource loader. */
-	@Autowired
-	private ResourcePatternResolver resourceLoader;
+	@Bean
+	public ApplicationParams applicationParams() {
+		return new ApplicationParams();
+	}
 
 	/**
 	 * Dozer bean mapper.
@@ -52,38 +68,63 @@ public class beansConfig {
 		DozerBeanMapper dozerBeanMapper = new DozerBeanMapper();
 		// Set the custom mapping files
 		dozerBeanMapper.setMappingFiles(Arrays.asList("dozerCustomMappingFiles/ProjectDozerMapper.xml",
-				"dozerCustomMappingFiles/IssueDozerMapper.xml", "dozerCustomMappingFiles/RuleDozerMapper.xml"));
-		// Set the custom converters if any
+				"dozerCustomMappingFiles/IssueDozerMapper.xml"));
+		// Set the custom converters if any (Not yet)
+		// Set the custom field Mapper (To avoid HIBERNATE lazy problems)
+		dozerBeanMapper.setCustomFieldMapper(new MyCustomFieldMapper());
 		LOG.info("Dozermapper created!");
 		return dozerBeanMapper;
 	}
 
-	/**
-	 * Rest template.
-	 *
-	 * @return the rest operations
-	 */
 	@Bean
-	public RestOperations restTemplate() {
-		// Using apache http impl
-		RestTemplate restTemplate = new RestTemplate();
-		LOG.info("RestTemplate created!");
-		return restTemplate;
+	public SonarQubeClient sonarQubeClient() {
+		return new SonarQubeClientImpl(applicationParams().SONAR_SERVER_URL);
+
 	}
 
 	/**
-	 * Jackson2 object mapper builder.
+	 * Servlet registration bean.
 	 *
-	 * @return the jackson2 object mapper builder
+	 * @param context
+	 *            the context
+	 * @return the servlet registration bean
 	 */
 	@Bean
-	public Jackson2ObjectMapperBuilder jackson2ObjectMapperBuilder() {
-		Jackson2ObjectMapperBuilder jacksonMapperJsonBuilder = Jackson2ObjectMapperBuilder.json();
-		// Date format
-		jacksonMapperJsonBuilder.dateFormat(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ"));
-		// Return the custom mapper;
+	public ServletRegistrationBean servletRegistrationBean(ApplicationContext context) {
+		return new ServletRegistrationBean(new CXFServlet(), "/services/*");
+	}
 
-		LOG.info("JacksonMapperJsonBuilder created!");
-		return jacksonMapperJsonBuilder;
+	/**
+	 * Rs server.
+	 *
+	 * @return the server
+	 */
+	@Bean
+	public Server rsServer(ApplicationContext context) {
+		// Find all beans annotated with @Path
+		List<Object> serviceBeans = Arrays.asList((context.getBeansWithAnnotation(Path.class).values()));
+		LOG.info("Registering service beans: " + serviceBeans);
+		// Jackson json provider
+		JacksonJsonProvider jsonProvider = new JacksonJsonProvider();
+		// Exception mapper
+		SonarViewerExceptionMapper exceptionMapper = new SonarViewerExceptionMapper();
+		List<Object> providers = Arrays.asList(jsonProvider, exceptionMapper);
+		LOG.info("Registering providers beans: " + serviceBeans);
+		JAXRSServerFactoryBean endpoint = new JAXRSServerFactoryBean();
+		endpoint.setServiceBeans(serviceBeans);
+		endpoint.setProviders(providers);
+		endpoint.setAddress("/");
+
+		Server cxfServer = endpoint.create();
+
+		// Add interceptor for logging request
+		if (LOG.isDebugEnabled()) {
+			cxfServer.getEndpoint().getInInterceptors().add(new LoggingInInterceptor());
+		}
+		// Add interceptor for logging response
+		if (LOG.isDebugEnabled()) {
+			cxfServer.getEndpoint().getOutInterceptors().add(new LoggingOutInterceptor());
+		}
+		return cxfServer;
 	}
 }

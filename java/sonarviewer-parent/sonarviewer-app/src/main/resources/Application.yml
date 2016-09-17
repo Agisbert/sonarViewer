@@ -6,13 +6,42 @@ spring:
 spring:
   profiles: dev
 
+server:
+  contextPath: /sonarviewer
+  port: 8080
 
 sonar:
   server:
-    url: https://nemo.sonarqube.org
+    url: http://localhost:9090
+  viewer:
+    innitialProject: tomcat 
 
 logging:
   level:
     org:
       hibernate:
-        SQL: INFO
+        SQL: error
+        type: error
+      w00tdevs: DEBUG
+---
+
+spring:
+  profiles: prod
+
+server:
+  contextPath: /sonarviewer
+  port: 8080
+
+sonar:
+  server:
+    url: https://nemo.sonarqube.org
+  viewer:
+    innitialProject: tomcat 
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: error
+        type: error
+      w00tdevs: DEBUG

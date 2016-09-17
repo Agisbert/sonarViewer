@@ -1,0 +1,10 @@
+/*	    _  _                
+*	   / \/ \_|_ _| _     _ 
+*	\^/\_/\_/ |_(_|(/_\_/_> 
+*
+*	Project: ${project_name}
+*	Package: ${package_name}
+*	Class: ${file_name}
+*	Author: ${user}
+*	Last update: ${date}
+*/
