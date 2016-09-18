@@ -5,9 +5,9 @@
 *
 *	Project: sonarviewer-app
 *	Package: org.w00tdevs.project.sonarviewer.config
-*	Class: beansConfig.java
+*	Class: BeansConfig.java
 *	Author: Alberto
-*	Last update: 17-sep-2016
+*	Last update: 18-sep-2016
 */
 package org.w00tdevs.project.sonarviewer.config;
 
