@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.config.cxf
 *	Class: SonarViewerExceptionMapper.java
 *	Author: Alberto
-*	Last update: 06-jul-2016
+*	Last update: 17-sep-2016
 */
 package org.w00tdevs.project.sonarviewer.config.cxf;
 
@@ -31,7 +31,7 @@ public class SonarViewerExceptionMapper implements ExceptionMapper<Exception> {
 		// convert to Response
 		SonarViewerError sonarViewerError = new SonarViewerError();
 		sonarViewerError.setErrorType("ERROR");
-		sonarViewerError.setErrorMessage(ex.getCause().toString());
+		sonarViewerError.setErrorMessage(ex.getMessage());
 		return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(sonarViewerError).build();
 	}
 }

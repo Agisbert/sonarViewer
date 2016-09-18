@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.webservice
 *	Class: SVProjectResourceService.java
 *	Author: Alberto
-*	Last update: 05-jul-2016
+*	Last update: 17-sep-2016
 */
 package org.w00tdevs.project.sonarviewer.webservice;
 
@@ -27,6 +27,7 @@ import org.w00tdevs.project.sonarviewer.api.domain.SonarViewerRule;
  * The Interface SVProjectResourceService.
  */
 @Path("projects")
+@Produces("application/json")
 public interface SVProjectResourceService {
 
 	/**
@@ -35,7 +36,6 @@ public interface SVProjectResourceService {
 	 * @return the sonar viewer projects
 	 */
 	@GET
-	@Produces("application/json")
 	List<SonarViewerProject> getSonarViewerProjects();
 
 	/**

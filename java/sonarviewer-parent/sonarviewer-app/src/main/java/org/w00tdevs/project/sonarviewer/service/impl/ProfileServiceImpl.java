@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.service.impl
 *	Class: ProfileServiceImpl.java
 *	Author: Alberto
-*	Last update: 13-may-2016
+*	Last update: 18-sep-2016
 */
 package org.w00tdevs.project.sonarviewer.service.impl;
 
@@ -118,6 +118,7 @@ public class ProfileServiceImpl implements ProfileService {
 	 * getProfilesFromProject(org.w00tdevs.project.sonarviewer.domain.SVProject)
 	 */
 	@Override
+	@Transactional
 	public List<SVProfile> getProfilesFromProject(SVProject svProject) {
 		Project project = projectRepository.findOne(svProject.getProjectId());
 		List<Profile> profiles = project.getProfiles();

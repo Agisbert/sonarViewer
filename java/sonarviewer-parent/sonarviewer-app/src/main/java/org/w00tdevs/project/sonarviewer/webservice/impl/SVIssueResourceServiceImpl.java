@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.webservice.impl
 *	Class: SVIssueResourceServiceImpl.java
 *	Author: Alberto
-*	Last update: 07-jul-2016
+*	Last update: 17-sep-2016
 */
 package org.w00tdevs.project.sonarviewer.webservice.impl;
 
