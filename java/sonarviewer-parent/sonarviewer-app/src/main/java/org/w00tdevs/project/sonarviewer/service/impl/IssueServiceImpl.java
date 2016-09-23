@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.service.impl
 *	Class: IssueServiceImpl.java
 *	Author: Alberto
-*	Last update: 07-jul-2016
+*	Last update: 18-sep-2016
 */
 package org.w00tdevs.project.sonarviewer.service.impl;
 
@@ -16,6 +16,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+
+import javax.transaction.Transactional;
 
 import org.dozer.Mapper;
 import org.slf4j.Logger;
@@ -42,6 +44,7 @@ import org.w00tdevs.project.sonarviewer.service.IssueService;
  * The Class IssueServiceImpl.
  */
 @Service
+@Transactional
 public class IssueServiceImpl implements IssueService {
 
 	/** The Constant LOG. */

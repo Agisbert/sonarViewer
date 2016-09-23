@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.service.impl
 *	Class: RuleServiceImpl.java
 *	Author: Alberto
-*	Last update: 13-may-2016
+*	Last update: 18-sep-2016
 */
 package org.w00tdevs.project.sonarviewer.service.impl;
 
@@ -41,6 +41,7 @@ import org.w00tdevs.project.sonarviewer.service.RuleService;
  * The Class RuleServiceImpl.
  */
 @Service
+@Transactional
 public class RuleServiceImpl implements RuleService {
 
 	/** The Constant LOG. */
@@ -168,7 +169,6 @@ public class RuleServiceImpl implements RuleService {
 	 * importRulesFromProject(org.w00tdevs.project.sonarviewer.domain.SVProject)
 	 */
 	@Override
-	@Transactional
 	public List<SVRule> importRulesFromProject(SVProject svProject) {
 		List<SVProfile> svProfiles = profileService.getProfilesFromProject(svProject);
 		List<SVRule> svRules = new ArrayList<SVRule>();

@@ -38,6 +38,7 @@ import org.w00tdevs.project.sonarviewer.service.ProfileService;
  * The Class ProfileServiceImpl.
  */
 @Service
+@Transactional
 public class ProfileServiceImpl implements ProfileService {
 
 	/** The Constant LOG. */
@@ -70,7 +71,6 @@ public class ProfileServiceImpl implements ProfileService {
 	 * importRulesForProject(java.lang.String)
 	 */
 	@Override
-	@Transactional
 	public List<SVProfile> importProfilesFromProject(SVProject svproject) {
 		LOG.info("Importing PROFILES from project " + svproject);
 		ProfilesSearchResponse psResponse = sonarQubeClient.getProfiles(svproject.getKey());
@@ -118,7 +118,6 @@ public class ProfileServiceImpl implements ProfileService {
 	 * getProfilesFromProject(org.w00tdevs.project.sonarviewer.domain.SVProject)
 	 */
 	@Override
-	@Transactional
 	public List<SVProfile> getProfilesFromProject(SVProject svProject) {
 		Project project = projectRepository.findOne(svProject.getProjectId());
 		List<Profile> profiles = project.getProfiles();

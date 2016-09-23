@@ -1,17 +1,19 @@
 /*
- *	    _  _                
- *	   / \/ \_|_ _| _     _ 
- *	\^/\_/\_/ |_(_|(/_\_/_> 
- *
- *	Project: sonarviewer-app
- *	Package: org.w00tdevs.project.sonarviewer.service.impl
- *	Class: ProjectServiceImpl.java
- *	Author: Alberto
- *	Last update: 13-may-2016
- */
+*	    _  _                
+*	   / \/ \_|_ _| _     _ 
+*	\^/\_/\_/ |_(_|(/_\_/_> 
+*
+*	Project: sonarviewer-app
+*	Package: org.w00tdevs.project.sonarviewer.service.impl
+*	Class: ProjectServiceImpl.java
+*	Author: Alberto
+*	Last update: 18-sep-2016
+*/
 package org.w00tdevs.project.sonarviewer.service.impl;
 
 import java.util.List;
+
+import javax.transaction.Transactional;
 
 import org.apache.commons.collections.IteratorUtils;
 import org.dozer.Mapper;
@@ -35,6 +37,7 @@ import org.w00tdevs.project.sonarviewer.service.ProjectService;
  *
  */
 @Service
+@Transactional
 public class ProjectServiceImpl implements ProjectService {
 
 	/** The Constant LOG. */
