@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.api.domain
 *	Class: SonarViewerCountMetadata.java
 *	Author: Alberto
-*	Last update: 18-sep-2016
+*	Last update: 30-sep-2016
 */
 package org.w00tdevs.project.sonarviewer.api.domain;
 
@@ -16,8 +16,8 @@ package org.w00tdevs.project.sonarviewer.api.domain;
  */
 public class SonarViewerCountMetadata {
 
-	/** The object type. */
-	private SonarViewerCountMetadataType objectType;
+	/** The resource type. */
+	private SonarViewerCountResourceType resourceType;
 
 	/** The value. */
 	private String value;
@@ -25,14 +25,14 @@ public class SonarViewerCountMetadata {
 	/**
 	 * Instantiates a new sonar viewer count metadata.
 	 *
-	 * @param objectType
-	 *            the object type
+	 * @param resourceType
+	 *            the resource type
 	 * @param value
 	 *            the value
 	 */
-	public SonarViewerCountMetadata(SonarViewerCountMetadataType objectType, String value) {
+	public SonarViewerCountMetadata(SonarViewerCountResourceType resourceType, String value) {
 		super();
-		this.objectType = objectType;
+		this.resourceType = resourceType;
 		this.value = value;
 	}
 
@@ -41,8 +41,8 @@ public class SonarViewerCountMetadata {
 	 *
 	 * @return the object type
 	 */
-	public SonarViewerCountMetadataType getObjectType() {
-		return objectType;
+	public SonarViewerCountResourceType getObjectType() {
+		return resourceType;
 	}
 
 	/**
@@ -51,8 +51,8 @@ public class SonarViewerCountMetadata {
 	 * @param objectType
 	 *            the new object type
 	 */
-	public void setObjectType(SonarViewerCountMetadataType objectType) {
-		this.objectType = objectType;
+	public void setObjectType(SonarViewerCountResourceType objectType) {
+		this.resourceType = objectType;
 	}
 
 	/**
@@ -75,9 +75,9 @@ public class SonarViewerCountMetadata {
 	}
 
 	/**
-	 * The Enum SonarViewerMetadataType.
+	 * The Enum SonarViewerCountResourceType.
 	 */
-	public enum SonarViewerCountMetadataType {
+	public enum SonarViewerCountResourceType {
 
 		/** The projects count. */
 		PROJECTS_COUNT("projectsCount"),
@@ -95,12 +95,12 @@ public class SonarViewerCountMetadata {
 		private String text;
 
 		/**
-		 * Instantiates a new sonar viewer metadata type.
+		 * Instantiates a new sonar viewer count resource type.
 		 *
 		 * @param text
 		 *            the text
 		 */
-		private SonarViewerCountMetadataType(String text) {
+		private SonarViewerCountResourceType(String text) {
 			this.text = text;
 		}
 

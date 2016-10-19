@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+	<mapping>
+		<class-a>org.w00tdevs.project.sonarviewer.external.sonarqube.domain.SonarQubeIssue
+		</class-a>
+		<class-b>org.w00tdevs.project.sonarviewer.database.entity.Issue
+		</class-b>
+		<field>
+			<a>rule</a>
+			<b>rule.key</b>
+		</field>
+
+	</mapping>
+
+</mappings> 

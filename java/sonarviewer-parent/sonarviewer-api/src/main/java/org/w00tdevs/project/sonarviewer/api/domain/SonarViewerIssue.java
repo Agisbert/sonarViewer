@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * The Class SonarViewerIssue.
  */
-public class SonarViewerIssue extends SonarViewerApiObject {
+public class SonarViewerIssue extends SonarViewerApiResource {
 
 	/** The issue id. */
 	private Long issueId;

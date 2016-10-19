@@ -14,7 +14,7 @@ package org.w00tdevs.project.sonarviewer.api.domain;
 /**
  * The Class SonarViewerQProfile.
  */
-public class SonarViewerQProfile extends SonarViewerApiObject {
+public class SonarViewerQProfile extends SonarViewerApiResource {
 
 	/** The profile id. */
 	private Long profileId;

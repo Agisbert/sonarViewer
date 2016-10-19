@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.config
 *	Class: BeansConfig.java
 *	Author: Alberto
-*	Last update: 18-sep-2016
+*	Last update: 04-oct-2016
 */
 package org.w00tdevs.project.sonarviewer.config;
 
@@ -33,7 +33,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.w00tdevs.project.sonarviewer.config.cxf.CustomOutInterceptor;
 import org.w00tdevs.project.sonarviewer.config.cxf.SonarViewerExceptionMapper;
+import org.w00tdevs.project.sonarviewer.dozer.CustomMapper;
 import org.w00tdevs.project.sonarviewer.dozer.MyCustomFieldMapper;
 import org.w00tdevs.project.sonarviewer.external.sonarqube.service.SonarQubeClient;
 import org.w00tdevs.project.sonarviewer.external.sonarqube.service.impl.SonarQubeClientImpl;
@@ -74,6 +76,21 @@ public class BeansConfig {
 		dozerBeanMapper.setCustomFieldMapper(new MyCustomFieldMapper());
 		LOG.info("Dozermapper created!");
 		return dozerBeanMapper;
+	}
+
+	/**
+	 * Dozer bean mapper.
+	 *
+	 * @return the mapper
+	 * @throws IOException
+	 *             Signals that an I/O exception has occurred.
+	 */
+	public CustomMapper customBeanMapper() throws IOException {
+		DozerBeanMapper dozerBeanMapper = new DozerBeanMapper();
+		// Set the custom mapping files
+		dozerBeanMapper.setMappingFiles(Arrays.asList("dozerMiniMappingsFiles/IssueDozerMapper.xml"));
+		LOG.info("Dozermapper created!");
+		return new CustomMapper(dozerBeanMapper);
 	}
 
 	@Bean
@@ -125,6 +142,8 @@ public class BeansConfig {
 		if (LOG.isDebugEnabled()) {
 			cxfServer.getEndpoint().getOutInterceptors().add(new LoggingOutInterceptor());
 		}
+		cxfServer.getEndpoint().getOutInterceptors().add(new CustomOutInterceptor());
+
 		return cxfServer;
 	}
 }

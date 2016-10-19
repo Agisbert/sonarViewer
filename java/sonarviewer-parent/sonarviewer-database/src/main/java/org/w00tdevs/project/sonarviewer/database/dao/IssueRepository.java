@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.database.dao
 *	Class: IssueRepository.java
 *	Author: Alberto
-*	Last update: 07-jul-2016
+*	Last update: 14-oct-2016
 */
 package org.w00tdevs.project.sonarviewer.database.dao;
 
@@ -52,7 +52,7 @@ public interface IssueRepository extends CrudRepository<Issue, Long> {
 	List<Issue> findByProject(Project project);
 
 	/**
-	 * Find by project and profile.
+	 * Find by project and rule profile.
 	 *
 	 * @param project
 	 *            the project
@@ -72,5 +72,23 @@ public interface IssueRepository extends CrudRepository<Issue, Long> {
 	 * @return the list
 	 */
 	List<Issue> findByProjectAndRule(Project project, Rule rule);
+
+	/**
+	 * Find by rule profile.
+	 *
+	 * @param profile
+	 *            the profile
+	 * @return the list
+	 */
+	List<Issue> findByRuleProfile(Profile profile);
+
+	/**
+	 * Find by rule.
+	 *
+	 * @param rule
+	 *            the rule
+	 * @return the list
+	 */
+	List<Issue> findByRule(Rule rule);
 
 }

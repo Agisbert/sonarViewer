@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.service.impl
 *	Class: ProfileServiceImpl.java
 *	Author: Alberto
-*	Last update: 18-sep-2016
+*	Last update: 14-oct-2016
 */
 package org.w00tdevs.project.sonarviewer.service.impl;
 
@@ -17,6 +17,7 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
+import org.apache.commons.collections.IteratorUtils;
 import org.dozer.Mapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -135,6 +136,17 @@ public class ProfileServiceImpl implements ProfileService {
 	public SVProfile getProfile(Long profileId) {
 		Profile profile = profileRepository.findOne(profileId);
 		return dozerMapper.map(profile, SVProfile.class);
+	}
+
+	/**
+	 * Gets the available profiles.
+	 *
+	 * @return the available profiles
+	 */
+	@Override
+	public List<SVProfile> getAvailableProfiles() {
+		List<Profile> profiles = IteratorUtils.toList(profileRepository.findAll().iterator());
+		return listTransformer.transform(profiles, SVProfile.class);
 	}
 
 }

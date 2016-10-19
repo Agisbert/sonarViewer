@@ -14,7 +14,7 @@ package org.w00tdevs.project.sonarviewer.api.domain;
 /**
  * The Class SonarViewerTag.
  */
-public class SonarViewerTag extends SonarViewerApiObject {
+public class SonarViewerTag extends SonarViewerApiResource {
 
 	/** The name. */
 	private String name;

@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.webservice.impl
 *	Class: SVProjectResourceServiceImpl.java
 *	Author: Alberto
-*	Last update: 18-sep-2016
+*	Last update: 14-oct-2016
 */
 package org.w00tdevs.project.sonarviewer.webservice.impl;
 
@@ -74,8 +74,8 @@ public class SVProjectResourceServiceImpl implements SVProjectResourceService {
 	 */
 	@Override
 	public List<SonarViewerProject> getSonarViewerProjects() {
-		List<SVProject> projects = projectService.getAvailableProjects();
-		return listTransformer.transform(projects, SonarViewerProject.class);
+		List<SVProject> svProjects = projectService.getAvailableProjects();
+		return listTransformer.transform(svProjects, SonarViewerProject.class);
 	}
 
 	/*
@@ -87,8 +87,8 @@ public class SVProjectResourceServiceImpl implements SVProjectResourceService {
 	 */
 	@Override
 	public SonarViewerProject getSonarViewerProject(Long projectId) {
-		SVProject project = projectService.getProject(projectId);
-		return dozerMapper.map(project, SonarViewerProject.class);
+		SVProject svProject = projectService.getProject(projectId);
+		return dozerMapper.map(svProject, SonarViewerProject.class);
 	}
 
 	/*
@@ -100,9 +100,9 @@ public class SVProjectResourceServiceImpl implements SVProjectResourceService {
 	 */
 	@Override
 	public List<SonarViewerQProfile> getSonarViewerProjectProfiles(Long projectId) {
-		SVProject project = projectService.getProject(projectId);
-		List<SVProfile> profiles = profileService.getProfilesFromProject(project);
-		return listTransformer.transform(profiles, SonarViewerQProfile.class);
+		SVProject svProject = projectService.getProject(projectId);
+		List<SVProfile> svProfiles = profileService.getProfilesFromProject(svProject);
+		return listTransformer.transform(svProfiles, SonarViewerQProfile.class);
 	}
 
 	/*
@@ -114,9 +114,9 @@ public class SVProjectResourceServiceImpl implements SVProjectResourceService {
 	 */
 	@Override
 	public List<SonarViewerRule> getSonarViewerProjectRules(Long projectId) {
-		SVProject project = projectService.getProject(projectId);
-		List<SVRule> rules = ruleService.getRulesFromProject(project);
-		return listTransformer.transform(rules, SonarViewerRule.class);
+		SVProject svProject = projectService.getProject(projectId);
+		List<SVRule> svRules = ruleService.getRulesFromProject(svProject);
+		return listTransformer.transform(svRules, SonarViewerRule.class);
 	}
 
 	/*
@@ -128,8 +128,8 @@ public class SVProjectResourceServiceImpl implements SVProjectResourceService {
 	 */
 	@Override
 	public List<SonarViewerIssue> getSonarViewerProjectIssues(Long projectId) {
-		SVProject project = projectService.getProject(projectId);
-		List<SVIssue> issues = issueService.getIssuesFromProject(project);
+		SVProject svProject = projectService.getProject(projectId);
+		List<SVIssue> issues = issueService.getIssuesFromProject(svProject);
 		return listTransformer.transform(issues, SonarViewerIssue.class);
 	}
 
@@ -143,11 +143,11 @@ public class SVProjectResourceServiceImpl implements SVProjectResourceService {
 	@Override
 	public List<SonarViewerMetadata> getSonarViewerProjectsSumary() {
 		List<SonarViewerMetadata> metadataList = new ArrayList<SonarViewerMetadata>();
-		for (SonarViewerProject project : getSonarViewerProjects()) {
-			SonarViewerMetadata metadata = new SonarViewerMetadata(project);
-			SonarViewerCountMetadata profilesMetadata = getSonarViewerProjectProfilesCount(project.getProjectId());
-			SonarViewerCountMetadata rulesMetadata = getSonarViewerProjectRulesCount(project.getProjectId());
-			SonarViewerCountMetadata issuesMetadata = getSonarViewerProjectIssuesCount(project.getProjectId());
+		for (SonarViewerProject svProject : getSonarViewerProjects()) {
+			SonarViewerMetadata metadata = new SonarViewerMetadata(svProject);
+			SonarViewerCountMetadata profilesMetadata = getSonarViewerProjectProfilesCount(svProject.getProjectId());
+			SonarViewerCountMetadata rulesMetadata = getSonarViewerProjectRulesCount(svProject.getProjectId());
+			SonarViewerCountMetadata issuesMetadata = getSonarViewerProjectIssuesCount(svProject.getProjectId());
 			metadata.setMetadataList(Arrays.asList(profilesMetadata, rulesMetadata, issuesMetadata));
 			metadataList.add(metadata);
 		}
@@ -163,9 +163,10 @@ public class SVProjectResourceServiceImpl implements SVProjectResourceService {
 	 */
 	@Override
 	public SonarViewerCountMetadata getSonarViewerProjectsCount() {
-		List<SVProject> projects = projectService.getAvailableProjects();
+		List<SVProject> svProjects = projectService.getAvailableProjects();
 		SonarViewerCountMetadata metadata = new SonarViewerCountMetadata(
-				SonarViewerCountMetadata.SonarViewerCountMetadataType.PROJECTS_COUNT, String.valueOf(projects.size()));
+				SonarViewerCountMetadata.SonarViewerCountResourceType.PROJECTS_COUNT,
+				String.valueOf(svProjects.size()));
 		return metadata;
 	}
 
@@ -178,10 +179,11 @@ public class SVProjectResourceServiceImpl implements SVProjectResourceService {
 	 */
 	@Override
 	public SonarViewerCountMetadata getSonarViewerProjectProfilesCount(Long projectId) {
-		SVProject project = projectService.getProject(projectId);
-		List<SVProfile> profiles = profileService.getProfilesFromProject(project);
+		SVProject svProjects = projectService.getProject(projectId);
+		List<SVProfile> svProfiles = profileService.getProfilesFromProject(svProjects);
 		SonarViewerCountMetadata metadata = new SonarViewerCountMetadata(
-				SonarViewerCountMetadata.SonarViewerCountMetadataType.PROFILES_COUNT, String.valueOf(profiles.size()));
+				SonarViewerCountMetadata.SonarViewerCountResourceType.PROFILES_COUNT,
+				String.valueOf(svProfiles.size()));
 		return metadata;
 	}
 
@@ -194,10 +196,10 @@ public class SVProjectResourceServiceImpl implements SVProjectResourceService {
 	 */
 	@Override
 	public SonarViewerCountMetadata getSonarViewerProjectRulesCount(Long projectId) {
-		SVProject project = projectService.getProject(projectId);
-		List<SVRule> rules = ruleService.getRulesFromProject(project);
+		SVProject svProject = projectService.getProject(projectId);
+		List<SVRule> svRules = ruleService.getRulesFromProject(svProject);
 		SonarViewerCountMetadata metadata = new SonarViewerCountMetadata(
-				SonarViewerCountMetadata.SonarViewerCountMetadataType.RULES_COUNT, String.valueOf(rules.size()));
+				SonarViewerCountMetadata.SonarViewerCountResourceType.RULES_COUNT, String.valueOf(svRules.size()));
 		return metadata;
 	}
 
@@ -210,10 +212,10 @@ public class SVProjectResourceServiceImpl implements SVProjectResourceService {
 	 */
 	@Override
 	public SonarViewerCountMetadata getSonarViewerProjectIssuesCount(Long projectId) {
-		SVProject project = projectService.getProject(projectId);
-		List<SVIssue> issues = issueService.getIssuesFromProject(project);
+		SVProject svProject = projectService.getProject(projectId);
+		List<SVIssue> svIssues = issueService.getIssuesFromProject(svProject);
 		SonarViewerCountMetadata metadata = new SonarViewerCountMetadata(
-				SonarViewerCountMetadata.SonarViewerCountMetadataType.ISSUES_COUNT, String.valueOf(issues.size()));
+				SonarViewerCountMetadata.SonarViewerCountResourceType.ISSUES_COUNT, String.valueOf(svIssues.size()));
 		return metadata;
 	}
 

@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.service
 *	Class: ProfileService.java
 *	Author: Alberto
-*	Last update: 13-may-2016
+*	Last update: 14-oct-2016
 */
 package org.w00tdevs.project.sonarviewer.service;
 
@@ -47,5 +47,12 @@ public interface ProfileService {
 	 * @return the profiles from project
 	 */
 	List<SVProfile> getProfilesFromProject(SVProject svProject);
+
+	/**
+	 * Gets the available profiles.
+	 *
+	 * @return the available profiles
+	 */
+	List<SVProfile> getAvailableProfiles();
 
 }

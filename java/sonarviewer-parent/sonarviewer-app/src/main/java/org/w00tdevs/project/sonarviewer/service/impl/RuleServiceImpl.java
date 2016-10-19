@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.service.impl
 *	Class: RuleServiceImpl.java
 *	Author: Alberto
-*	Last update: 18-sep-2016
+*	Last update: 14-oct-2016
 */
 package org.w00tdevs.project.sonarviewer.service.impl;
 
@@ -136,6 +136,17 @@ public class RuleServiceImpl implements RuleService {
 			}
 		}
 		return savedRules;
+	}
+
+	/**
+	 * Gets the available rules.
+	 *
+	 * @return the available rules
+	 */
+	@Override
+	public List<SVRule> getAvailableRules() {
+		List<Rule> rules = (List<Rule>) ruleRespository.findAll();
+		return listTransformer.transform(rules, SVRule.class);
 	}
 
 	/**

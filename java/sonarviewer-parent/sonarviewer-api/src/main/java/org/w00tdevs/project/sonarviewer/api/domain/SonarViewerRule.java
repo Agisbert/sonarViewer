@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * The Class SonarViewerRule.
  */
-public class SonarViewerRule extends SonarViewerApiObject {
+public class SonarViewerRule extends SonarViewerApiResource {
 
 	/** The rule id. */
 	private Long ruleId;

@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.service
 *	Class: IssueService.java
 *	Author: Alberto
-*	Last update: 07-jul-2016
+*	Last update: 14-oct-2016
 */
 package org.w00tdevs.project.sonarviewer.service;
 
@@ -96,5 +96,30 @@ public interface IssueService {
 	 * @return the issue
 	 */
 	SVIssue getIssue(Long issueId);
+
+	/**
+	 * Gets the issues from profile.
+	 *
+	 * @param svProfile
+	 *            the sv profile
+	 * @return the issues from profile
+	 */
+	List<SVIssue> getIssuesFromProfile(SVProfile svProfile);
+
+	/**
+	 * Gets the available issues.
+	 *
+	 * @return the available issues
+	 */
+	List<SVIssue> getAvailableIssues();
+
+	/**
+	 * Gets the issues from rule.
+	 *
+	 * @param svRule
+	 *            the sv rule
+	 * @return the issues from rule
+	 */
+	List<SVIssue> getIssuesFromRule(SVRule svRule);
 
 }

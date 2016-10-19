@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.service.impl
 *	Class: IssueServiceImpl.java
 *	Author: Alberto
-*	Last update: 18-sep-2016
+*	Last update: 14-oct-2016
 */
 package org.w00tdevs.project.sonarviewer.service.impl;
 
@@ -19,6 +19,7 @@ import java.util.stream.IntStream;
 
 import javax.transaction.Transactional;
 
+import org.apache.commons.collections.IteratorUtils;
 import org.dozer.Mapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -228,11 +229,45 @@ public class IssueServiceImpl implements IssueService {
 		return svIssues;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.w00tdevs.project.sonarviewer.service.IssueService#getIssue(java.lang.
+	 * Long)
+	 */
 	@Override
 	public SVIssue getIssue(Long issueId) {
 		Issue issue = issueRepository.findOne(issueId);
 		return dozerMapper.map(issue, SVIssue.class);
 
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.w00tdevs.project.sonarviewer.service.IssueService#
+	 * getIssuesFromProfile(org.w00tdevs.project.sonarviewer.domain.SVProfile)
+	 */
+	@Override
+	public List<SVIssue> getIssuesFromProfile(SVProfile svProfile) {
+		Profile profile = dozerMapper.map(svProfile, Profile.class);
+		List<Issue> projectIssues = issueRepository.findByRuleProfile(profile);
+		List<SVIssue> svIssues = listTransformer.transform(projectIssues, SVIssue.class);
+		return svIssues;
+	}
+
+	@Override
+	public List<SVIssue> getAvailableIssues() {
+		List<Issue> issues = IteratorUtils.toList(issueRepository.findAll().iterator());
+		return listTransformer.transform(issues, SVIssue.class);
+	}
+
+	@Override
+	public List<SVIssue> getIssuesFromRule(SVRule svRule) {
+		Rule rule = dozerMapper.map(svRule, Rule.class);
+		List<Issue> ruleIssues = issueRepository.findByRule(rule);
+		return listTransformer.transform(ruleIssues, SVIssue.class);
 	}
 
 }

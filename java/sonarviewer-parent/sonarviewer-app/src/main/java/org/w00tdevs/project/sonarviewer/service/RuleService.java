@@ -7,7 +7,7 @@
 *	Package: org.w00tdevs.project.sonarviewer.service
 *	Class: RuleService.java
 *	Author: Alberto
-*	Last update: 13-may-2016
+*	Last update: 14-oct-2016
 */
 package org.w00tdevs.project.sonarviewer.service;
 
@@ -66,5 +66,12 @@ public interface RuleService {
 	 * @return the rule
 	 */
 	SVRule getRule(Long ruleId);
+
+	/**
+	 * Gets the available rules.
+	 *
+	 * @return the available rules
+	 */
+	List<SVRule> getAvailableRules();
 
 }

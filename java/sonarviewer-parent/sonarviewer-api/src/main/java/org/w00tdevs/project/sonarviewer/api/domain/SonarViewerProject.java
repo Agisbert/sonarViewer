@@ -18,7 +18,7 @@ package org.w00tdevs.project.sonarviewer.api.domain;
  * @author Alberto
  *
  */
-public class SonarViewerProject extends SonarViewerApiObject {
+public class SonarViewerProject extends SonarViewerApiResource {
 
 	/** The project id. */
 	private Long projectId;

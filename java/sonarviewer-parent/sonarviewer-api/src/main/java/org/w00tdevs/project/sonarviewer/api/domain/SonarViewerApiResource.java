@@ -5,18 +5,21 @@
 *
 *	Project: sonarviewer-api
 *	Package: org.w00tdevs.project.sonarviewer.api.domain
-*	Class: SonarViewerApiObject.java
+*	Class: SonarViewerApiResource.java
 *	Author: Alberto
-*	Last update: 18-sep-2016
+*	Last update: 30-sep-2016
 */
 package org.w00tdevs.project.sonarviewer.api.domain;
 
 /**
- * The Class SonarViewerTag.
+ * The Class SonarViewerApiResource.
  */
-public class SonarViewerApiObject {
+public class SonarViewerApiResource {
 
-	protected SonarViewerApiObject() {
+	/**
+	 * Instantiates a new sonar viewer api resource.
+	 */
+	protected SonarViewerApiResource() {
 		super();
 	}
 
