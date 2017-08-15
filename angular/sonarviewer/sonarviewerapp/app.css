@@ -1,0 +1,26 @@
+/* app css stylesheet */
+
+body {
+    color: #999;
+}
+
+h1 {
+    color: #999;
+}
+
+p {
+    color: #999;
+}
+
+.minorText {
+    color: #999;
+    font-size: x-small;
+    margin: 1%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+}
